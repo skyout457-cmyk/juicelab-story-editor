@@ -1,0 +1,194 @@
+{
+ "format": "juicelab-editor-catalog-1",
+ "speakers": [
+  {
+   "id": "orc",
+   "label": "歐克",
+   "kind": "speech",
+   "faces": [
+    {
+     "key": "平常",
+     "sprite": "spr_orc_portrait_neutral",
+     "frame": 0
+    },
+    {
+     "key": "平常流汗",
+     "sprite": "spr_orc_portrait_neutral",
+     "frame": 1
+    },
+    {
+     "key": "平常臉紅",
+     "sprite": "spr_orc_portrait_neutral",
+     "frame": 2
+    },
+    {
+     "key": "三角嘴",
+     "sprite": "spr_orc_portrait_triangle",
+     "frame": 0
+    },
+    {
+     "key": "三角嘴流汗",
+     "sprite": "spr_orc_portrait_triangle",
+     "frame": 1
+    },
+    {
+     "key": "三角嘴臉紅",
+     "sprite": "spr_orc_portrait_triangle",
+     "frame": 2
+    },
+    {
+     "key": "得意",
+     "sprite": "spr_orc_portrait_smug",
+     "frame": 0,
+     "note": "立繪可能還在重畫"
+    }
+   ]
+  },
+  {
+   "id": "ophelia",
+   "label": "歐菲",
+   "kind": "speech",
+   "faces": [
+    {
+     "key": "平常",
+     "sprite": "spr_ophelia_portrait_neutral",
+     "frame": 0
+    },
+    {
+     "key": "微笑",
+     "sprite": "spr_ophelia_portrait_smile",
+     "frame": 0
+    },
+    {
+     "key": "溫柔",
+     "sprite": "spr_ophelia_portrait_gentle",
+     "frame": 0
+    },
+    {
+     "key": "擔心",
+     "sprite": "spr_ophelia_portrait_worried",
+     "frame": 0
+    },
+    {
+     "key": "難過",
+     "sprite": "spr_ophelia_portrait_sad",
+     "frame": 0
+    },
+    {
+     "key": "驚訝",
+     "sprite": "spr_ophelia_portrait_surprised",
+     "frame": 0
+    },
+    {
+     "key": "生氣",
+     "sprite": "spr_ophelia_portrait_angry",
+     "frame": 0
+    },
+    {
+     "key": "睡著",
+     "sprite": "spr_ophelia_portrait_sleep",
+     "frame": 0
+    },
+    {
+     "key": "害羞",
+     "sprite": "spr_ophelia_portrait_shy",
+     "frame": 0
+    },
+    {
+     "key": "受傷",
+     "sprite": "spr_ophelia_portrait_injured",
+     "frame": 0
+    },
+    {
+     "key": "受傷平靜",
+     "sprite": "spr_ophelia_portrait_injured",
+     "frame": 1
+    },
+    {
+     "key": "受傷忍痛",
+     "sprite": "spr_ophelia_portrait_injured",
+     "frame": 2
+    },
+    {
+     "key": "受傷微笑",
+     "sprite": "spr_ophelia_portrait_injured",
+     "frame": 3
+    },
+    {
+     "key": "受傷閉眼",
+     "sprite": "spr_ophelia_portrait_injured",
+     "frame": 4
+    }
+   ]
+  },
+  {
+   "id": "narrator",
+   "label": "旁白",
+   "kind": "narration",
+   "faces": [],
+   "hint": "客觀敘述，台詞用全形括號（）包住；沒有名牌、沒有立繪"
+  }
+ ],
+ "emotes": [
+  {
+   "n": 2,
+   "key": "cry",
+   "label": "哭哭 #2"
+  },
+  {
+   "n": 3,
+   "key": "smirk",
+   "label": "嘿嘿 #3"
+  },
+  {
+   "n": 4,
+   "key": "panic",
+   "label": "恐慌 #4"
+  },
+  {
+   "n": 5,
+   "key": "happy",
+   "label": "開心 #5"
+  },
+  {
+   "n": 6,
+   "key": "sparkle",
+   "label": "閃光 #6"
+  },
+  {
+   "n": 7,
+   "key": "speechless",
+   "label": "傻眼 #7"
+  },
+  {
+   "n": 8,
+   "key": "surprise",
+   "label": "驚訝 #8"
+  },
+  {
+   "n": 9,
+   "key": "soulless",
+   "label": "失魂 #9"
+  },
+  {
+   "n": 10,
+   "key": "shy",
+   "label": "害羞 #10"
+  },
+  {
+   "n": 11,
+   "key": "question",
+   "label": "疑惑 #11"
+  },
+  {
+   "n": 12,
+   "key": "heart",
+   "label": "愛心 #12"
+  },
+  {
+   "n": 13,
+   "key": "angry",
+   "label": "氣氣 #13"
+  }
+ ]
+}

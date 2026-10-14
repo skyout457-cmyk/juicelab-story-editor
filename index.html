@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#2b2533">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="劇情編輯">
+<title>JuiceLab 劇情編輯</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <select id="sceneSel" aria-label="場景"></select>
+  <button id="newScene" class="sm">＋場景</button>
+  <button id="menuBtn" class="sm" aria-label="選單">⋯</button>
+</header>
+<div id="menu" hidden>
+  <button id="renameScene">改場景名稱</button>
+  <button id="dupScene">複製這個場景</button>
+  <button id="delScene" class="danger">刪除這個場景</button>
+  <label class="chk"><input type="checkbox" id="autoFw"> 自動把半形 ?!,:;() 換成全形</label>
+  <p class="ver" id="ver"></p>
+</div>
+<main>
+  <label class="title">場景名稱<input id="sceneTitle" placeholder="例：第一晚 e 段"></label>
+  <ol id="lines"></ol>
+  <button id="addLine" class="big">＋ 加一行</button>
+  <p class="tip">中文標點請用全形：，。？！：；（）……——</p>
+</main>
+<footer>
+  <button id="importBtn">開啟檔案</button>
+  <button id="saveBtn" class="primary">存檔</button>
+  <input type="file" id="fileIn" accept=".json,application/json" hidden>
+</footer>
+<div id="toast" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
