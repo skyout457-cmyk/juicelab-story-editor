@@ -31,3 +31,7 @@ footer{position:fixed;left:0;right:0;bottom:0;display:grid;grid-template-columns
 footer button{min-height:56px}
 #toast{position:fixed;left:50%;bottom:96px;transform:translateX(-50%);background:#000c;padding:10px 16px;border-radius:10px;max-width:90vw;z-index:9}
 [hidden]{display:none!important}
+.adds{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+li.line.act{background:#2f3a2c;border-left-color:#e0b347}
+li.line.act .num{color:#e0b347;font-weight:700}
+.actbtn{background:#4a4226}

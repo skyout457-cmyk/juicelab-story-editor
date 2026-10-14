@@ -3,7 +3,9 @@ const VERSION = 1, KEY = 'jl-story-editor-v1';
 let CAT = null, S = null; // catalog, state {cur, autoFw, scenes:[{id,title,lines}]}
 const $ = s => document.querySelector(s);
 const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
-const emptyLine = () => ({who: '', face: '', emote: '', text: ''});
+const emptyLine = () => ({type: 'line', who: '', face: '', emote: '', text: ''});
+const emptyAction = () => ({type: 'action', text: ''});
+const isAct = l => l.type === 'action';
 const newScene = t => ({id: uid(), title: t || '', lines: [emptyLine()]});
 const FW = {'?': '？', '!': '！', ',': '，', ':': '：', ';': '；', '(': '（', ')': '）'};
 const toFw = s => s.replace(/[?!,:;()]/g, c => FW[c]).replace(/\.\.\.+/g, '……');
@@ -29,6 +31,7 @@ function renderScenes() {
   $('#sceneTitle').value = scene().title; $('#autoFw').checked = !!S.autoFw;
 }
 function lineProblems(l) {
+  if (isAct(l)) return hasHalf(l.text) ? ['有半形標點'] : [];
   const p = [], sp = speaker(l.who);
   if (!sp) p.push('請選「誰」');
   else if (sp.faces.length && !sp.faces.some(f => f.key === l.face)) p.push('請選表情');
@@ -42,6 +45,7 @@ function renderLines() {
   renderScenes();
 }
 function lineCard(l, i) {
+  if (isAct(l)) return actionCard(l, i);
   const sp = speaker(l.who), li = el('li', 'line' + (sp && sp.kind === 'narration' ? ' narr' : ''));
   li.append(el('div', 'num', [`第 ${i + 1} 行`]));
   const who = document.createElement('select'); who.append(opt('', '誰？（必選）', l.who));
@@ -61,20 +65,31 @@ function lineCard(l, i) {
   tx.oninput = () => { if (S.autoFw && hasHalf(tx.value)) { const p = tx.selectionStart; tx.value = toFw(tx.value); tx.setSelectionRange(p, p); } l.text = tx.value; save(); check(); };
   const lab = (t, c) => { const w = el('label', '', [t]); w.append(c); return w; };
   li.append(el('div', 'row', [lab('誰', who), lab('表情', face)]), el('div', 'row', [lab('表符', emo), el('div')]), tx, warn);
+  cardTools(l, i, li);
+  check(); return li;
+}
+
+function cardTools(l, i, li) {
   const L = scene().lines, b = (t, f, cls) => { const x = el('button', cls, [t]); x.onclick = () => { f(); save(); renderLines(); }; return x; };
   li.append(el('div', 'tools', [
     b('↑', () => { if (i > 0) [L[i - 1], L[i]] = [L[i], L[i - 1]]; }),
     b('↓', () => { if (i < L.length - 1) [L[i + 1], L[i]] = [L[i], L[i + 1]]; }),
-    b('插入', () => L.splice(i + 1, 0, {...emptyLine(), who: l.who, face: l.face})),
+    b('插入', () => L.splice(i + 1, 0, isAct(l) ? emptyAction() : {...emptyLine(), who: l.who, face: l.face})),
     b('複製', () => L.splice(i + 1, 0, {...l})),
     b('刪除', () => { if (confirm(`刪除第 ${i + 1} 行？`)) { L.splice(i, 1); if (!L.length) L.push(emptyLine()); } }, 'danger')]));
-  check(); return li;
 }
-
+function actionCard(l, i) {
+  const li = el('li', 'line act');
+  li.append(el('div', 'num', [`🎬 動作卡・第 ${i + 1} 行`]));
+  const tx = document.createElement('textarea'); tx.value = l.text; tx.placeholder = '鏡頭、走位、人物動作……';
+  const warn = el('div', 'warn');
+  tx.oninput = () => { if (S.autoFw && hasHalf(tx.value)) { const p = tx.selectionStart; tx.value = toFw(tx.value); tx.setSelectionRange(p, p); } l.text = tx.value; save(); warn.textContent = lineProblems(l).join('、'); };
+  li.append(tx, warn); warn.textContent = lineProblems(l).join('、'); cardTools(l, i, li); return li;
+}
 function exportObj() {
   const sc = scene();
   return {format: 'juicelab-story-editor-1', version: VERSION, exported: new Date().toISOString(),
-    scene: {id: sc.id, title: sc.title}, lines: sc.lines.filter(l => l.who || l.text).map(l => ({who: l.who, face: l.face, emote: l.emote, text: l.text}))};
+    scene: {id: sc.id, title: sc.title}, lines: sc.lines.filter(l => isAct(l) ? l.text.trim() : (l.who || l.text)).map(l => isAct(l) ? {type: 'action', text: l.text} : {type: 'line', who: l.who, face: l.face, emote: l.emote, text: l.text})};
 }
 async function doSave() {
   const sc = scene(), o = exportObj(), bad = o.lines.filter(l => lineProblems(l).length).length;
@@ -82,7 +97,7 @@ async function doSave() {
   const name = ((sc.title || 'scene').replace(/[\\/:*?"<>|\s]+/g, '_')) + '.json';
   const file = new File([JSON.stringify(o, null, 1)], name, {type: 'application/json'});
   if (navigator.canShare && navigator.canShare({files: [file]})) {
-    try { await navigator.share({files: [file], title: name}); toast('已開啟分享，選「雲端硬碟」→「JuiceLab 劇情編輯」'); return; }
+    try { await navigator.share({files: [file]}); toast('已開啟分享，選「雲端硬碟」→「JuiceLab 劇情編輯」'); return; }
     catch (e) { if (e.name === 'AbortError') return; }
   }
   const a = document.createElement('a'); a.href = URL.createObjectURL(file); a.download = name; a.click();
@@ -93,7 +108,7 @@ function doImport(f) {
   r.onload = () => { try {
     const o = JSON.parse(r.result); if (!o || !Array.isArray(o.lines)) throw 0;
     const sc = {id: (o.scene && o.scene.id) || uid(), title: (o.scene && o.scene.title) || f.name.replace(/\.json$/, ''),
-      lines: o.lines.map(l => ({who: l.who || '', face: l.face || '', emote: l.emote || '', text: l.text || ''}))};
+      lines: o.lines.map(l => l.type === 'action' ? {type: 'action', text: l.text || ''} : {type: 'line', who: l.who || '', face: l.face || '', emote: l.emote || '', text: l.text || ''})};
     if (!sc.lines.length) sc.lines.push(emptyLine());
     const i = S.scenes.findIndex(s => s.id === sc.id);
     if (i >= 0 && confirm('已經有這個場景，要覆蓋嗎？（取消＝另存成新場景）')) S.scenes[i] = sc, S.cur = i;
@@ -112,7 +127,8 @@ function bind() {
   $('#dupScene').onclick = () => { const c = JSON.parse(JSON.stringify(scene())); c.id = uid(); c.title += '（複製）'; S.scenes.push(c); S.cur = S.scenes.length - 1; save(); renderLines(); $('#menu').hidden = true; };
   $('#delScene').onclick = () => { if (!confirm(`刪除場景「${scene().title}」？`)) return; S.scenes.splice(S.cur, 1); if (!S.scenes.length) S.scenes.push(newScene('新場景')); S.cur = 0; save(); renderLines(); $('#menu').hidden = true; };
   $('#autoFw').onchange = e => { S.autoFw = e.target.checked; if (S.autoFw) scene().lines.forEach(l => l.text = toFw(l.text)); save(); renderLines(); };
-  $('#addLine').onclick = () => { const L = scene().lines, last = L[L.length - 1] || {}; L.push({...emptyLine(), who: last.who || '', face: last.face || ''}); save(); renderLines(); window.scrollTo(0, document.body.scrollHeight); };
+  $('#addLine').onclick = () => { const L = scene().lines, last = [...L].reverse().find(x => !isAct(x)) || {}; L.push({...emptyLine(), who: last.who || '', face: last.face || ''}); save(); renderLines(); window.scrollTo(0, document.body.scrollHeight); };
+  $('#addAct').onclick = () => { scene().lines.push(emptyAction()); save(); renderLines(); window.scrollTo(0, document.body.scrollHeight); };
   $('#saveBtn').onclick = doSave;
   $('#importBtn').onclick = () => $('#fileIn').click();
   $('#fileIn').onchange = e => { if (e.target.files[0]) doImport(e.target.files[0]); e.target.value = ''; };

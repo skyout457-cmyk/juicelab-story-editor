@@ -15,14 +15,16 @@
   "exported": "2026-10-14T12:00:00.000Z",
   "scene": {"id": "場景 id（自動產生）", "title": "場景名稱"},
   "lines": [
-    {"who": "歐克", "face": "三角嘴", "emote": "驚訝", "text": "……！"},
-    {"who": "旁白", "face": "", "emote": "", "text": "（雨聲變大了）"}
+    {"type": "line", "who": "歐克", "face": "三角嘴", "emote": "驚訝", "text": "……！"},
+    {"type": "action", "text": "鏡頭慢慢推近火堆，歐克往後退半步"},
+    {"type": "line", "who": "旁白", "face": "", "emote": "", "text": "（雨聲變大了）"}
   ]
 }
 ```
 
 | 欄位 | 內容 |
 |---|---|
+| `type` | `line`＝台詞、`action`＝🎬 動作卡（只有 `text`：鏡頭、走位、人物動作的文字說明）。舊檔沒有 `type` 一律當 `line` |
 | `who` | 必填。`catalog.json` 的 `speakers[].label`（歐克、歐菲、旁白） |
 | `face` | 必填（旁白為 `""`）。那個角色的 `faces[].key` |
 | `emote` | 選填。表符名稱（`emotes[].label` 去掉 ` #N`，例 `驚訝`）；`""`＝沒有 |
