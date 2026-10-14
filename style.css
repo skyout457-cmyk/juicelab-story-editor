@@ -30,3 +30,4 @@ li.line.bad{outline:2px solid #d65}
 footer{position:fixed;left:0;right:0;bottom:0;display:grid;grid-template-columns:1fr 1.4fr;gap:10px;padding:10px;padding-bottom:max(10px,env(safe-area-inset-bottom));background:#2b2533;box-shadow:0 -2px 8px #0008}
 footer button{min-height:56px}
 #toast{position:fixed;left:50%;bottom:96px;transform:translateX(-50%);background:#000c;padding:10px 16px;border-radius:10px;max-width:90vw;z-index:9}
+[hidden]{display:none!important}
