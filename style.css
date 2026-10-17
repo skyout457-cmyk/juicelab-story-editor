@@ -20,7 +20,7 @@ li.line{background:#2b2533;border-radius:14px;padding:10px;margin-bottom:12px;bo
 li.line.narr{border-left-color:#c9c2a8}
 li.line.bad{outline:2px solid #d65}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
-.row label{font-size:13px;color:#aaa}
+.row label,.row .grp{font-size:13px;color:#aaa}
 .num{font-size:13px;color:#aaa;margin-bottom:4px}
 .warn{color:#f6a;font-size:13px;margin-top:4px}
 .tools{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-top:8px}
@@ -41,3 +41,4 @@ li.line.act .num{color:#e0b347;font-weight:700}
 .fx button.fxb:disabled{opacity:.35;text-decoration:line-through}
 .fx.none button.fxb{opacity:.25}
 .fx select.fxsel{min-height:48px;font-size:15px;background:#2b2533;color:inherit;border:1px solid #514862}
+.fxb:disabled{opacity:.35;cursor:not-allowed}

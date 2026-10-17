@@ -35,7 +35,7 @@ function normLine(l) {
   if (isAct(l)) return l;
   FX.forEach(([k]) => { l[k] = !!l[k]; });
   const sp = speaker(l.who), old = sp && sp.legacy_faces ? sp.legacy_faces.find(x => x.key === l.face) : null;
-  if (old && !faceOf(sp, l.face)) { l.face = old.face; l.sweat = l.sweat || old.sweat; l.blush = l.blush || old.blush; }
+  if (old && !faceOf(sp, l.face)) { l.face = old.face; l.sweat = l.sweat || old.sweat === true; l.blush = l.blush || old.blush === true; }
   return l;
 }
 function toast(m) { const t = $('#toast'); t.textContent = m; t.hidden = false; clearTimeout(t._t); t._t = setTimeout(() => t.hidden = true, 2600); }
@@ -85,35 +85,26 @@ function lineCard(l, i) {
     (f && f.layers ? f.layers : []).forEach(x => {
       const bit = FX_BIT[x.k], on = !!(m & bit), b = el('button', 'fxb', [x.label]);
       b.type = 'button'; b.classList.toggle('on', on); b.setAttribute('aria-pressed', on ? 'true' : 'false');
-      // 2026-10-17 (no_snap)：按下去的結果沒有圖就不顯示這個按鈕（不跳到別的組合）。
-      if (!maskOk(f, m ^ bit)) return;
+      // 2026-10-18 (fx_buttons_only)：按鈕是唯一依據。打開後沒有圖→停用（不換別張）；已打開的永遠可以關。
+      if (!on && !maskOk(f, m ^ bit)) { b.disabled = true; b.title = '沒有這個組合的圖'; }
       b.onclick = () => { l[x.k] = !l[x.k]; save(); paintFx(); check(); };
       fxBox.append(b);
     });
-    // 這個表情所有有圖的組合（單選）：只列真的有圖的，例如歐菲秘湯＝無效果／臉紅＋秘湯汗／臉紅＋秘湯汗＋泡後身體。
-    const ok = (f && f.ok) || [0];
-    if (f && ok.length > 1) {
-      const sel = el('select', 'fxsel');
-      sel.setAttribute('aria-label', '效果組合');
-      if (!ok.includes(m)) { const o = el('option', '', ['（請選效果）']); o.value = ''; o.selected = true; o.disabled = true; sel.append(o); }
-      ok.forEach(x => { const o = el('option', '', [fxName(f, x)]); o.value = String(x); o.selected = x === m; sel.append(o); });
-      sel.onchange = () => { const t = Number(sel.value); FX.forEach(([k, bb]) => { l[k] = !!(t & bb); }); save(); paintFx(); check(); };
-      fxBox.append(sel);
-    }
     fxBox.classList.toggle('none', !f || (f.ok || [0]).length < 2);
   };
   if (sp && sp.kind === 'narration') { FX.forEach(([k]) => { l[k] = false; }); fxBox.hidden = true; }
   const check = () => { const p = lineProblems(l); warn.textContent = p.join('、'); li.classList.toggle('bad', p.length > 0 && !!(l.who || l.text)); };
   who.onchange = () => { l.who = who.value; const s = speaker(l.who); if (!s || !s.faces.some(f => f.key === l.face)) l.face = ''; if (s && s.kind === 'narration') { l.emote = ''; if (!l.text) l.text = '（）'; } save(); renderLines(); };
   face.onchange = () => { l.face = face.value;
-    // 新表情沒有目前的組合：不自動換成別的（no_snap），這一行標紅，請從組合清單重選。
+    // 新表情沒有目前的組合：不自動換成別的（no_snap），這一行標紅，請用按鈕關掉多的效果。
     const f = faceOf(sp, l.face), m = maskOf(l);
-    if (f && m && !maskOk(f, m)) toast(`「${f.key}」沒有${fxName(f, m)}的圖，請重選效果`);
+    if (f && m && !maskOk(f, m)) toast(`「${f.key}」沒有${fxName(f, m)}的圖，請用按鈕關掉多的效果`);
     save(); paintFx(); check(); };
   emo.onchange = () => { l.emote = emo.value; save(); };
   tx.oninput = () => { if (S.autoFw && hasHalf(tx.value)) { const p = tx.selectionStart; tx.value = toFw(tx.value); tx.setSelectionRange(p, p); } l.text = tx.value; save(); check(); };
+  const grp = (t, c) => { const w = el('div', 'grp', [t]); w.append(c); return w; };
   const lab = (t, c) => { const w = el('label', '', [t]); w.append(c); return w; };
-  li.append(el('div', 'row', [lab('誰', who), lab('表情', face)]), el('div', 'row', [lab('表符', emo), lab('效果（可同時：臉紅／流汗／泡後身體／眼淚）', fxBox)]), tx, warn);
+  li.append(el('div', 'row', [lab('誰', who), lab('表情', face)]), el('div', 'row', [lab('表符', emo), grp('效果（可同時：臉紅／流汗／泡後身體／眼淚）', fxBox)]), tx, warn);
   cardTools(l, i, li);
   paintFx(); check(); return li;
 }
@@ -123,7 +114,7 @@ function cardTools(l, i, li) {
   li.append(el('div', 'tools', [
     b('↑', () => { if (i > 0) [L[i - 1], L[i]] = [L[i], L[i - 1]]; }),
     b('↓', () => { if (i < L.length - 1) [L[i + 1], L[i]] = [L[i], L[i + 1]]; }),
-    b('插入', () => L.splice(i + 1, 0, isAct(l) ? emptyAction() : {...emptyLine(), who: l.who, face: l.face, sweat: !!l.sweat, blush: !!l.blush, body: !!l.body, tears: !!l.tears})),
+    b('插入', () => L.splice(i + 1, 0, isAct(l) ? emptyAction() : {...emptyLine(), who: l.who, face: l.face})),
     b('複製', () => L.splice(i + 1, 0, {...l})),
     b('刪除', () => { if (confirm(`刪除第 ${i + 1} 行？`)) { L.splice(i, 1); if (!L.length) L.push(emptyLine()); } }, 'danger')]));
 }
@@ -192,7 +183,7 @@ function bind() {
   $('#dupScene').onclick = () => { const c = JSON.parse(JSON.stringify(scene())); c.id = uid(); c.title += '（複製）'; S.scenes.push(c); S.cur = S.scenes.length - 1; save(); renderLines(); $('#menu').hidden = true; };
   $('#delScene').onclick = () => { if (!confirm(`刪除場景「${scene().title}」？`)) return; S.scenes.splice(S.cur, 1); if (!S.scenes.length) S.scenes.push(newScene('新場景')); S.cur = 0; save(); renderLines(); $('#menu').hidden = true; };
   $('#autoFw').onchange = e => { S.autoFw = e.target.checked; if (S.autoFw) scene().lines.forEach(l => l.text = toFw(l.text)); save(); renderLines(); };
-  $('#addLine').onclick = () => { const L = scene().lines, last = [...L].reverse().find(x => !isAct(x)) || {}; L.push({...emptyLine(), who: last.who || '', face: last.face || '', sweat: !!last.sweat, blush: !!last.blush, body: !!last.body, tears: !!last.tears}); save(); renderLines(); window.scrollTo(0, document.body.scrollHeight); };
+  $('#addLine').onclick = () => { const L = scene().lines, last = [...L].reverse().find(x => !isAct(x)) || {}; L.push({...emptyLine(), who: last.who || '', face: last.face || ''}); save(); renderLines(); window.scrollTo(0, document.body.scrollHeight); };
   $('#addAct').onclick = () => { scene().lines.push(emptyAction()); save(); renderLines(); window.scrollTo(0, document.body.scrollHeight); };
   $('#saveBtn').onclick = doSave;
   $('#importBtn').onclick = () => $('#fileIn').click();
