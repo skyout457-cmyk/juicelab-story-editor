@@ -2088,7 +2088,11 @@
       0,
       1,
       2,
-      3
+      3,
+      8,
+      9,
+      10,
+      11
      ],
      "combos": [
       {
@@ -2158,6 +2162,74 @@
          "fx": 3
         }
        }
+      },
+      {
+       "m": 8,
+       "cell": "艾瑪，平常＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_neutral",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "neutral",
+         "fx": 8
+        }
+       }
+      },
+      {
+       "m": 9,
+       "cell": "艾瑪，平常＋臉紅＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_neutral",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "neutral",
+         "fx": 9
+        }
+       }
+      },
+      {
+       "m": 10,
+       "cell": "艾瑪，平常＋流汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_neutral",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "neutral",
+         "fx": 10
+        }
+       }
+      },
+      {
+       "m": 11,
+       "cell": "艾瑪，平常＋臉紅＋流汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_neutral",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "neutral",
+         "fx": 11
+        }
+       }
       }
      ],
      "sprite": "spr_emma_portrait_neutral",
@@ -2186,7 +2258,11 @@
       0,
       1,
       2,
-      3
+      3,
+      8,
+      9,
+      10,
+      11
      ],
      "combos": [
       {
@@ -2256,6 +2332,74 @@
          "fx": 3
         }
        }
+      },
+      {
+       "m": 8,
+       "cell": "艾瑪，微笑＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_smile",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "smile",
+         "fx": 8
+        }
+       }
+      },
+      {
+       "m": 9,
+       "cell": "艾瑪，微笑＋臉紅＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_smile",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "smile",
+         "fx": 9
+        }
+       }
+      },
+      {
+       "m": 10,
+       "cell": "艾瑪，微笑＋流汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_smile",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "smile",
+         "fx": 10
+        }
+       }
+      },
+      {
+       "m": 11,
+       "cell": "艾瑪，微笑＋臉紅＋流汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_smile",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "smile",
+         "fx": 11
+        }
+       }
       }
      ],
      "sprite": "spr_emma_portrait_smile",
@@ -2284,7 +2428,11 @@
       0,
       1,
       2,
-      3
+      3,
+      8,
+      9,
+      10,
+      11
      ],
      "combos": [
       {
@@ -2354,6 +2502,74 @@
          "fx": 3
         }
        }
+      },
+      {
+       "m": 8,
+       "cell": "艾瑪，溫柔＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_gentle",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "gentle",
+         "fx": 8
+        }
+       }
+      },
+      {
+       "m": 9,
+       "cell": "艾瑪，溫柔＋臉紅＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_gentle",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "gentle",
+         "fx": 9
+        }
+       }
+      },
+      {
+       "m": 10,
+       "cell": "艾瑪，溫柔＋流汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_gentle",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "gentle",
+         "fx": 10
+        }
+       }
+      },
+      {
+       "m": 11,
+       "cell": "艾瑪，溫柔＋臉紅＋流汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_gentle",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "gentle",
+         "fx": 11
+        }
+       }
       }
      ],
      "sprite": "spr_emma_portrait_gentle",
@@ -2382,7 +2598,11 @@
       0,
       1,
       2,
-      3
+      3,
+      8,
+      9,
+      10,
+      11
      ],
      "combos": [
       {
@@ -2450,6 +2670,74 @@
          "set": "normal",
          "face": "worried",
          "fx": 3
+        }
+       }
+      },
+      {
+       "m": 8,
+       "cell": "艾瑪，擔心＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_worried",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "worried",
+         "fx": 8
+        }
+       }
+      },
+      {
+       "m": 9,
+       "cell": "艾瑪，擔心＋臉紅＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_worried",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "worried",
+         "fx": 9
+        }
+       }
+      },
+      {
+       "m": 10,
+       "cell": "艾瑪，擔心＋流汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_worried",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "worried",
+         "fx": 10
+        }
+       }
+      },
+      {
+       "m": 11,
+       "cell": "艾瑪，擔心＋臉紅＋流汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_worried",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "worried",
+         "fx": 11
         }
        }
       }
@@ -2650,7 +2938,11 @@
       0,
       1,
       2,
-      3
+      3,
+      8,
+      9,
+      10,
+      11
      ],
      "combos": [
       {
@@ -2720,6 +3012,74 @@
          "fx": 3
         }
        }
+      },
+      {
+       "m": 8,
+       "cell": "艾瑪，驚訝＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_surprised",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "surprised",
+         "fx": 8
+        }
+       }
+      },
+      {
+       "m": 9,
+       "cell": "艾瑪，驚訝＋臉紅＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_surprised",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "surprised",
+         "fx": 9
+        }
+       }
+      },
+      {
+       "m": 10,
+       "cell": "艾瑪，驚訝＋流汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_surprised",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "surprised",
+         "fx": 10
+        }
+       }
+      },
+      {
+       "m": 11,
+       "cell": "艾瑪，驚訝＋臉紅＋流汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_surprised",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "surprised",
+         "fx": 11
+        }
+       }
       }
      ],
      "sprite": "spr_emma_portrait_surprised",
@@ -2748,7 +3108,11 @@
       0,
       1,
       2,
-      3
+      3,
+      8,
+      9,
+      10,
+      11
      ],
      "combos": [
       {
@@ -2818,6 +3182,74 @@
          "fx": 3
         }
        }
+      },
+      {
+       "m": 8,
+       "cell": "艾瑪，生氣＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_angry",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "angry",
+         "fx": 8
+        }
+       }
+      },
+      {
+       "m": 9,
+       "cell": "艾瑪，生氣＋臉紅＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_angry",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "angry",
+         "fx": 9
+        }
+       }
+      },
+      {
+       "m": 10,
+       "cell": "艾瑪，生氣＋流汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_angry",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "angry",
+         "fx": 10
+        }
+       }
+      },
+      {
+       "m": 11,
+       "cell": "艾瑪，生氣＋臉紅＋流汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_angry",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "angry",
+         "fx": 11
+        }
+       }
       }
      ],
      "sprite": "spr_emma_portrait_angry",
@@ -2846,7 +3278,11 @@
       0,
       1,
       2,
-      3
+      3,
+      8,
+      9,
+      10,
+      11
      ],
      "combos": [
       {
@@ -2916,6 +3352,74 @@
          "fx": 3
         }
        }
+      },
+      {
+       "m": 8,
+       "cell": "艾瑪，睡著＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_sleep",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "sleep",
+         "fx": 8
+        }
+       }
+      },
+      {
+       "m": 9,
+       "cell": "艾瑪，睡著＋臉紅＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_sleep",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "sleep",
+         "fx": 9
+        }
+       }
+      },
+      {
+       "m": 10,
+       "cell": "艾瑪，睡著＋流汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_sleep",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "sleep",
+         "fx": 10
+        }
+       }
+      },
+      {
+       "m": 11,
+       "cell": "艾瑪，睡著＋臉紅＋流汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_sleep",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "sleep",
+         "fx": 11
+        }
+       }
       }
      ],
      "sprite": "spr_emma_portrait_sleep",
@@ -2944,7 +3448,11 @@
       0,
       1,
       2,
-      3
+      3,
+      8,
+      9,
+      10,
+      11
      ],
      "combos": [
       {
@@ -3014,6 +3522,74 @@
          "fx": 3
         }
        }
+      },
+      {
+       "m": 8,
+       "cell": "艾瑪，害羞＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_shy",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "shy",
+         "fx": 8
+        }
+       }
+      },
+      {
+       "m": 9,
+       "cell": "艾瑪，害羞＋臉紅＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_shy",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "shy",
+         "fx": 9
+        }
+       }
+      },
+      {
+       "m": 10,
+       "cell": "艾瑪，害羞＋流汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_shy",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "shy",
+         "fx": 10
+        }
+       }
+      },
+      {
+       "m": 11,
+       "cell": "艾瑪，害羞＋臉紅＋流汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_shy",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "shy",
+         "fx": 11
+        }
+       }
       }
      ],
      "sprite": "spr_emma_portrait_shy",
@@ -3035,13 +3611,20 @@
       {
        "k": "body",
        "label": "泡後身體"
+      },
+      {
+       "k": "tears",
+       "label": "眼淚"
       }
      ],
      "by_design": false,
      "ok": [
       0,
       3,
-      7
+      7,
+      8,
+      11,
+      15
      ],
      "combos": [
       {
@@ -3094,6 +3677,57 @@
          "fx": 7
         }
        }
+      },
+      {
+       "m": 8,
+       "cell": "艾瑪，秘湯＋平常＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_neutral",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "neutral",
+         "fx": 8
+        }
+       }
+      },
+      {
+       "m": 11,
+       "cell": "艾瑪，秘湯＋平常＋臉紅＋秘湯汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_neutral",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "neutral",
+         "fx": 11
+        }
+       }
+      },
+      {
+       "m": 15,
+       "cell": "艾瑪，秘湯＋平常＋臉紅＋秘湯汗＋泡後身體＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_neutral",
+        "frame": 2,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "neutral",
+         "fx": 15
+        }
+       }
       }
      ],
      "sprite": "spr_emma_onsen_neutral",
@@ -3115,13 +3749,20 @@
       {
        "k": "body",
        "label": "泡後身體"
+      },
+      {
+       "k": "tears",
+       "label": "眼淚"
       }
      ],
      "by_design": false,
      "ok": [
       0,
       3,
-      7
+      7,
+      8,
+      11,
+      15
      ],
      "combos": [
       {
@@ -3174,6 +3815,57 @@
          "fx": 7
         }
        }
+      },
+      {
+       "m": 8,
+       "cell": "艾瑪，秘湯＋微笑＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_smile",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "smile",
+         "fx": 8
+        }
+       }
+      },
+      {
+       "m": 11,
+       "cell": "艾瑪，秘湯＋微笑＋臉紅＋秘湯汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_smile",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "smile",
+         "fx": 11
+        }
+       }
+      },
+      {
+       "m": 15,
+       "cell": "艾瑪，秘湯＋微笑＋臉紅＋秘湯汗＋泡後身體＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_smile",
+        "frame": 2,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "smile",
+         "fx": 15
+        }
+       }
       }
      ],
      "sprite": "spr_emma_onsen_smile",
@@ -3195,13 +3887,20 @@
       {
        "k": "body",
        "label": "泡後身體"
+      },
+      {
+       "k": "tears",
+       "label": "眼淚"
       }
      ],
      "by_design": false,
      "ok": [
       0,
       3,
-      7
+      7,
+      8,
+      11,
+      15
      ],
      "combos": [
       {
@@ -3254,6 +3953,57 @@
          "fx": 7
         }
        }
+      },
+      {
+       "m": 8,
+       "cell": "艾瑪，秘湯＋溫柔＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_gentle",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "gentle",
+         "fx": 8
+        }
+       }
+      },
+      {
+       "m": 11,
+       "cell": "艾瑪，秘湯＋溫柔＋臉紅＋秘湯汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_gentle",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "gentle",
+         "fx": 11
+        }
+       }
+      },
+      {
+       "m": 15,
+       "cell": "艾瑪，秘湯＋溫柔＋臉紅＋秘湯汗＋泡後身體＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_gentle",
+        "frame": 2,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "gentle",
+         "fx": 15
+        }
+       }
       }
      ],
      "sprite": "spr_emma_onsen_gentle",
@@ -3275,13 +4025,20 @@
       {
        "k": "body",
        "label": "泡後身體"
+      },
+      {
+       "k": "tears",
+       "label": "眼淚"
       }
      ],
      "by_design": false,
      "ok": [
       0,
       3,
-      7
+      7,
+      8,
+      11,
+      15
      ],
      "combos": [
       {
@@ -3334,6 +4091,57 @@
          "fx": 7
         }
        }
+      },
+      {
+       "m": 8,
+       "cell": "艾瑪，秘湯＋擔心＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_worried",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "worried",
+         "fx": 8
+        }
+       }
+      },
+      {
+       "m": 11,
+       "cell": "艾瑪，秘湯＋擔心＋臉紅＋秘湯汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_worried",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "worried",
+         "fx": 11
+        }
+       }
+      },
+      {
+       "m": 15,
+       "cell": "艾瑪，秘湯＋擔心＋臉紅＋秘湯汗＋泡後身體＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_worried",
+        "frame": 2,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "worried",
+         "fx": 15
+        }
+       }
       }
      ],
      "sprite": "spr_emma_onsen_worried",
@@ -3355,13 +4163,20 @@
       {
        "k": "body",
        "label": "泡後身體"
+      },
+      {
+       "k": "tears",
+       "label": "眼淚"
       }
      ],
      "by_design": false,
      "ok": [
       0,
       3,
-      7
+      7,
+      8,
+      11,
+      15
      ],
      "combos": [
       {
@@ -3414,6 +4229,57 @@
          "fx": 7
         }
        }
+      },
+      {
+       "m": 8,
+       "cell": "艾瑪，秘湯＋難過＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_sad",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "sad",
+         "fx": 8
+        }
+       }
+      },
+      {
+       "m": 11,
+       "cell": "艾瑪，秘湯＋難過＋臉紅＋秘湯汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_sad",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "sad",
+         "fx": 11
+        }
+       }
+      },
+      {
+       "m": 15,
+       "cell": "艾瑪，秘湯＋難過＋臉紅＋秘湯汗＋泡後身體＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_sad",
+        "frame": 2,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "sad",
+         "fx": 15
+        }
+       }
       }
      ],
      "sprite": "spr_emma_onsen_sad",
@@ -3435,13 +4301,20 @@
       {
        "k": "body",
        "label": "泡後身體"
+      },
+      {
+       "k": "tears",
+       "label": "眼淚"
       }
      ],
      "by_design": false,
      "ok": [
       0,
       3,
-      7
+      7,
+      8,
+      11,
+      15
      ],
      "combos": [
       {
@@ -3494,6 +4367,57 @@
          "fx": 7
         }
        }
+      },
+      {
+       "m": 8,
+       "cell": "艾瑪，秘湯＋驚訝＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_surprised",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "surprised",
+         "fx": 8
+        }
+       }
+      },
+      {
+       "m": 11,
+       "cell": "艾瑪，秘湯＋驚訝＋臉紅＋秘湯汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_surprised",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "surprised",
+         "fx": 11
+        }
+       }
+      },
+      {
+       "m": 15,
+       "cell": "艾瑪，秘湯＋驚訝＋臉紅＋秘湯汗＋泡後身體＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_surprised",
+        "frame": 2,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "surprised",
+         "fx": 15
+        }
+       }
       }
      ],
      "sprite": "spr_emma_onsen_surprised",
@@ -3515,13 +4439,20 @@
       {
        "k": "body",
        "label": "泡後身體"
+      },
+      {
+       "k": "tears",
+       "label": "眼淚"
       }
      ],
      "by_design": false,
      "ok": [
       0,
       3,
-      7
+      7,
+      8,
+      11,
+      15
      ],
      "combos": [
       {
@@ -3574,6 +4505,57 @@
          "fx": 7
         }
        }
+      },
+      {
+       "m": 8,
+       "cell": "艾瑪，秘湯＋生氣＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_angry",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "angry",
+         "fx": 8
+        }
+       }
+      },
+      {
+       "m": 11,
+       "cell": "艾瑪，秘湯＋生氣＋臉紅＋秘湯汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_angry",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "angry",
+         "fx": 11
+        }
+       }
+      },
+      {
+       "m": 15,
+       "cell": "艾瑪，秘湯＋生氣＋臉紅＋秘湯汗＋泡後身體＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_angry",
+        "frame": 2,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "angry",
+         "fx": 15
+        }
+       }
       }
      ],
      "sprite": "spr_emma_onsen_angry",
@@ -3595,13 +4577,20 @@
       {
        "k": "body",
        "label": "泡後身體"
+      },
+      {
+       "k": "tears",
+       "label": "眼淚"
       }
      ],
      "by_design": false,
      "ok": [
       0,
       3,
-      7
+      7,
+      8,
+      11,
+      15
      ],
      "combos": [
       {
@@ -3654,6 +4643,57 @@
          "fx": 7
         }
        }
+      },
+      {
+       "m": 8,
+       "cell": "艾瑪，秘湯＋睡著＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_sleep",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "sleep",
+         "fx": 8
+        }
+       }
+      },
+      {
+       "m": 11,
+       "cell": "艾瑪，秘湯＋睡著＋臉紅＋秘湯汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_sleep",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "sleep",
+         "fx": 11
+        }
+       }
+      },
+      {
+       "m": 15,
+       "cell": "艾瑪，秘湯＋睡著＋臉紅＋秘湯汗＋泡後身體＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_sleep",
+        "frame": 2,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "sleep",
+         "fx": 15
+        }
+       }
       }
      ],
      "sprite": "spr_emma_onsen_sleep",
@@ -3675,13 +4715,20 @@
       {
        "k": "body",
        "label": "泡後身體"
+      },
+      {
+       "k": "tears",
+       "label": "眼淚"
       }
      ],
      "by_design": false,
      "ok": [
       0,
       3,
-      7
+      7,
+      8,
+      11,
+      15
      ],
      "combos": [
       {
@@ -3732,6 +4779,57 @@
          "set": "onsen",
          "face": "shy",
          "fx": 7
+        }
+       }
+      },
+      {
+       "m": 8,
+       "cell": "艾瑪，秘湯＋害羞＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_shy",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "shy",
+         "fx": 8
+        }
+       }
+      },
+      {
+       "m": 11,
+       "cell": "艾瑪，秘湯＋害羞＋臉紅＋秘湯汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_shy",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "shy",
+         "fx": 11
+        }
+       }
+      },
+      {
+       "m": 15,
+       "cell": "艾瑪，秘湯＋害羞＋臉紅＋秘湯汗＋泡後身體＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_onsen_shy",
+        "frame": 2,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "onsen",
+         "face": "shy",
+         "fx": 15
         }
        }
       }
