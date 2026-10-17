@@ -17,7 +17,7 @@ import argparse, importlib.util, json, os, re, sys
 # mask combinations the art really has ("combos"); each combo carries the exact TSV cell and the
 # converter's own portrait dict (sprite / frame / spec), so editor -> TSV -> JSON cannot drift.
 FX_KEY = {1: "blush", 2: "sweat", 4: "body", 8: "tears"}
-FX_WORD = {1: "臉紅", 4: "身體紅潤", 8: "眼淚"}
+FX_WORD = {1: "臉紅", 4: "泡後身體", 8: "眼淚"}
 
 def load_converter(game):
     sys.path.insert(0, os.path.join(game, "tools"))
@@ -66,7 +66,11 @@ def main():
                         sys.exit("converter disagrees with spec: %s %s" % (cell, rep.errors))
                     combos.append({"m": m, "cell": cell, "portrait": out[0]})
                 key = ("秘湯・" if st["id"] == "onsen" else "") + f["label"]
-                faces.append({"key": key, "set": st["id"], "face": f["key"], "layers": layers,
+                # 故意沒有效果的表情（歐菲受傷）不給效果按鈕，也不算缺圖
+                none = f.get("fx") == "none_by_design"
+                face_layers = [] if none else layers
+                faces.append({"key": key, "set": st["id"], "face": f["key"], "layers": face_layers,
+                              "by_design": none,
                               "ok": [x["m"] for x in combos], "combos": combos,
                               "sprite": combos[0]["portrait"]["sprite"], "frame": combos[0]["portrait"]["frame"]})
                 # old exports wrote one key per FX frame (「平常流汗」); keep reading them

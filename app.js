@@ -22,7 +22,7 @@ const scene = () => S.scenes[S.cur];
 const speaker = label => CAT.speakers.find(s => s.label === label);
 // 2026-10-17 (viewer_fx) 效果層：全部來自遊戲的 portrait_spec.json（catalog.json 由它產生）。
 // faces[].layers＝這個表情所屬套裝（一般／秘湯）有的層；faces[].ok＝美術真的有的 mask 組合。
-// mask：臉紅 1｜流汗（秘湯＝秘湯汗）2｜身體紅潤 4｜眼淚 8。沒有的組合按鈕停用，不偷偷換成別張。
+// mask：臉紅 1｜流汗（秘湯＝秘湯汗）2｜泡後身體 4｜眼淚 8。沒有的組合按鈕停用，不偷偷換成別張。
 const FX = [['blush', 1], ['sweat', 2], ['body', 4], ['tears', 8]];
 const FX_BIT = Object.fromEntries(FX);
 const faceOf = (sp, key) => sp ? sp.faces.find(f => f.key === key) : null;
@@ -108,7 +108,7 @@ function lineCard(l, i) {
   emo.onchange = () => { l.emote = emo.value; save(); };
   tx.oninput = () => { if (S.autoFw && hasHalf(tx.value)) { const p = tx.selectionStart; tx.value = toFw(tx.value); tx.setSelectionRange(p, p); } l.text = tx.value; save(); check(); };
   const lab = (t, c) => { const w = el('label', '', [t]); w.append(c); return w; };
-  li.append(el('div', 'row', [lab('誰', who), lab('表情', face)]), el('div', 'row', [lab('表符', emo), lab('效果（可同時：臉紅／流汗／身體紅潤／眼淚）', fxBox)]), tx, warn);
+  li.append(el('div', 'row', [lab('誰', who), lab('表情', face)]), el('div', 'row', [lab('表符', emo), lab('效果（可同時：臉紅／流汗／泡後身體／眼淚）', fxBox)]), tx, warn);
   cardTools(l, i, li);
   paintFx(); check(); return li;
 }

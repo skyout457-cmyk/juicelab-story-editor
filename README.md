@@ -27,7 +27,7 @@
 | `type` | `line`＝台詞、`action`＝🎬 動作卡（只有 `text`：鏡頭、走位、人物動作的文字說明）。舊檔沒有 `type` 一律當 `line` |
 | `who` | 必填。`catalog.json` 的 `speakers[].label`（歐克、歐菲、旁白） |
 | `face` | 必填（旁白為 `""`）。那個角色的 `faces[].key` |
-| `blush` / `sweat` / `body` / `tears` | 選填。效果開關（臉紅／流汗〔秘湯套裝＝秘湯汗〕／身體紅潤／眼淚），可以同時開；沒有就是 `false`。只能開美術真的有的組合（`catalog.json` 的 `faces[].ok`／`combos`，由遊戲的 `datafiles/portraits/portrait_spec.json` 產生）。舊檔的「平常流汗」鍵照樣讀（`legacy_faces`），舊檔沒有 `body`／`tears` 也照讀 |
+| `blush` / `sweat` / `body` / `tears` | 選填。效果開關（臉紅／流汗〔秘湯套裝＝秘湯汗〕／泡後身體／眼淚），可以同時開；沒有就是 `false`。只能開美術真的有的組合（`catalog.json` 的 `faces[].ok`／`combos`，由遊戲的 `datafiles/portraits/portrait_spec.json` 產生）。舊檔的「平常流汗」鍵照樣讀（`legacy_faces`），舊檔沒有 `body`／`tears` 也照讀 |
 | `emote` | 選填。表符名稱（`emotes[].label` 去掉 ` #N`，例 `驚訝`）；`""`＝沒有 |
 | `text` | 台詞。中文標點用全形；旁白用全形（）包住 |
 
@@ -43,3 +43,9 @@
 - 換表情時，新表情沒有目前的組合：會明確關掉並提示，不偷偷換成別張。
 
 每個角色有／缺的組合見遊戲 `docs/event_format.md`「Portrait spec」的表。
+
+## 2026-10-17 spec_labels
+- 秘湯效果層：臉紅、秘湯汗、泡後身體（身體紅潤＋高光＋水滴水痕永遠一起出現，是同一層；舊名「身體紅潤」「泡後」照樣可用）。
+- 歐菲／艾瑪／瑪琪娜的秘湯目前只有預合成圖：無、臉紅＋秘湯汗、臉紅＋秘湯汗＋泡後身體；其他組合按鈕停用（缺圖），等美術交透明分層 PNG 後只要改規格資料。
+- 歐克故意沒有秘湯套，不提供秘湯表情。歐菲的 5 個受傷表情故意沒有效果，不顯示效果按鈕、不算缺圖。
+- 格子也可用「・」分隔：`赫蒂，秘湯・害羞・臉紅・泡後身體`。
