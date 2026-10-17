@@ -18310,5 +18310,26 @@
    "key": "angry",
    "label": "氣氣 #13"
   }
- ]
+ ],
+ "archived": {
+  "dir": "_archive_old_story",
+  "ids": [
+   "ch1_03_first_meeting_0_return",
+   "ch1_03_first_meeting_a",
+   "ch1_03_first_meeting_b",
+   "ch1_03_first_meeting_c",
+   "ch1_03_first_meeting_d",
+   "ch1_03_first_meeting_e",
+   "ch1_opening_1_4",
+   "ch2_01_morning",
+   "ch2_02_battlefield_hero",
+   "ch2_03a_battlefield_hero_defeated",
+   "ch2_03b_battlefield_soul_pickup",
+   "ch2_04_teary_bridge_hero",
+   "ch2_05_teary_bridge_emma",
+   "ch2_06a_fort_blessing",
+   "ch2_06b_fort_analysis",
+   "ch2_07_world_open"
+  ]
+ }
 }

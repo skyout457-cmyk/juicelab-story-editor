@@ -92,6 +92,8 @@ def main():
         zh = names.get(n, (key, ""))[1]
         emotes.append({"n": n, "key": key, "label": ("%s #%d" % (zh, n)) if zh else ("#%d（未命名）" % n)})
     cat = {"format": "juicelab-editor-catalog-1", "speakers": speakers, "emotes": emotes}
+    # 2026-10-17 (old_story_archive): old pre-rewrite story is frozen; the editor refuses these scenes / files.
+    cat["archived"] = {"dir": sbc.ARCHIVE_DIR_NAME, "ids": sorted(sbc.ARCHIVED_IDS)}
     with open(a.out, "w", encoding="utf-8") as f:
         json.dump(cat, f, ensure_ascii=False, indent=1); f.write("\n")
     print("wrote", a.out, {s["label"]: len(s["faces"]) for s in speakers}, "emotes", len(emotes))

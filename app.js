@@ -152,10 +152,26 @@ async function doSave() {
   const a = document.createElement('a'); a.href = URL.createObjectURL(file); a.download = name; a.click();
   setTimeout(() => URL.revokeObjectURL(a.href), 4000); toast('已下載 ' + name);
 }
+// 2026-10-17 (old_story_archive): 改寫前的舊劇情已封存（_archive_old_story），編輯器一律拒絕開啟。
+function archivedWhy(...names) {
+  const A = (CAT && CAT.archived) || {dir: '_archive_old_story', ids: []};
+  for (const n of names) {
+    const t = String(n || '');
+    if (!t) continue;
+    if (t.includes(A.dir)) return `這是封存的舊劇情（${A.dir}），已凍結，不能使用。`;
+    const stem = t.split(/[\\/]/).pop().replace(/\.(json|tsv|md)$/i, '');
+    if (A.ids.includes(stem)) return `「${stem}」是封存的舊劇情，已凍結，不能使用。`;
+  }
+  return '';
+}
 function doImport(f) {
+  const why0 = archivedWhy(f.name, f.webkitRelativePath);
+  if (why0) { toast('拒絕開啟：' + why0); alert('拒絕開啟：' + why0); return; }
   const r = new FileReader();
   r.onload = () => { try {
     const o = JSON.parse(r.result); if (!o || !Array.isArray(o.lines)) throw 0;
+    const why = archivedWhy(o.scene && o.scene.id, o.scene && o.scene.title, o.source);
+    if (why) { toast('拒絕開啟：' + why); alert('拒絕開啟：' + why); return; }
     const sc = {id: (o.scene && o.scene.id) || uid(), title: (o.scene && o.scene.title) || f.name.replace(/\.json$/, ''),
       lines: o.lines.map(l => l.type === 'action' ? {type: 'action', text: l.text || ''} : normLine({type: 'line', who: l.who || '', face: l.face || '', sweat: !!l.sweat, blush: !!l.blush, body: !!l.body, tears: !!l.tears, emote: l.emote || '', text: l.text || ''}))};
     if (!sc.lines.length) sc.lines.push(emptyLine());
