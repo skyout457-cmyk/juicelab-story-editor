@@ -2102,7 +2102,9 @@
      "by_design": false,
      "ok": [
       0,
-      1
+      1,
+      2,
+      3
      ],
      "combos": [
       {
@@ -2138,6 +2140,40 @@
          "fx": 1
         }
        }
+      },
+      {
+       "m": 2,
+       "cell": "艾瑪，平常＋流汗",
+       "portrait": {
+        "sprite": "spr_emma_portrait_neutral",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "neutral",
+         "fx": 2
+        }
+       }
+      },
+      {
+       "m": 3,
+       "cell": "艾瑪，平常＋臉紅＋流汗",
+       "portrait": {
+        "sprite": "spr_emma_portrait_neutral",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "neutral",
+         "fx": 3
+        }
+       }
       }
      ],
      "sprite": "spr_emma_portrait_neutral",
@@ -2160,7 +2196,9 @@
      "by_design": false,
      "ok": [
       0,
-      1
+      1,
+      2,
+      3
      ],
      "combos": [
       {
@@ -2196,6 +2234,40 @@
          "fx": 1
         }
        }
+      },
+      {
+       "m": 2,
+       "cell": "艾瑪，微笑＋流汗",
+       "portrait": {
+        "sprite": "spr_emma_portrait_smile",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "smile",
+         "fx": 2
+        }
+       }
+      },
+      {
+       "m": 3,
+       "cell": "艾瑪，微笑＋臉紅＋流汗",
+       "portrait": {
+        "sprite": "spr_emma_portrait_smile",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "smile",
+         "fx": 3
+        }
+       }
       }
      ],
      "sprite": "spr_emma_portrait_smile",
@@ -2218,7 +2290,9 @@
      "by_design": false,
      "ok": [
       0,
-      1
+      1,
+      2,
+      3
      ],
      "combos": [
       {
@@ -2254,6 +2328,40 @@
          "fx": 1
         }
        }
+      },
+      {
+       "m": 2,
+       "cell": "艾瑪，溫柔＋流汗",
+       "portrait": {
+        "sprite": "spr_emma_portrait_gentle",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "gentle",
+         "fx": 2
+        }
+       }
+      },
+      {
+       "m": 3,
+       "cell": "艾瑪，溫柔＋臉紅＋流汗",
+       "portrait": {
+        "sprite": "spr_emma_portrait_gentle",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "gentle",
+         "fx": 3
+        }
+       }
       }
      ],
      "sprite": "spr_emma_portrait_gentle",
@@ -2276,7 +2384,9 @@
      "by_design": false,
      "ok": [
       0,
-      1
+      1,
+      2,
+      3
      ],
      "combos": [
       {
@@ -2312,6 +2422,40 @@
          "fx": 1
         }
        }
+      },
+      {
+       "m": 2,
+       "cell": "艾瑪，擔心＋流汗",
+       "portrait": {
+        "sprite": "spr_emma_portrait_worried",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "worried",
+         "fx": 2
+        }
+       }
+      },
+      {
+       "m": 3,
+       "cell": "艾瑪，擔心＋臉紅＋流汗",
+       "portrait": {
+        "sprite": "spr_emma_portrait_worried",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "worried",
+         "fx": 3
+        }
+       }
       }
      ],
      "sprite": "spr_emma_portrait_worried",
@@ -2334,7 +2478,9 @@
      "by_design": false,
      "ok": [
       0,
-      1
+      1,
+      2,
+      3
      ],
      "combos": [
       {
@@ -2370,6 +2516,40 @@
          "fx": 1
         }
        }
+      },
+      {
+       "m": 2,
+       "cell": "艾瑪，難過＋流汗",
+       "portrait": {
+        "sprite": "spr_emma_portrait_sad",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "sad",
+         "fx": 2
+        }
+       }
+      },
+      {
+       "m": 3,
+       "cell": "艾瑪，難過＋臉紅＋流汗",
+       "portrait": {
+        "sprite": "spr_emma_portrait_sad",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "sad",
+         "fx": 3
+        }
+       }
       }
      ],
      "sprite": "spr_emma_portrait_sad",
@@ -2392,7 +2572,9 @@
      "by_design": false,
      "ok": [
       0,
-      1
+      1,
+      2,
+      3
      ],
      "combos": [
       {
@@ -2428,6 +2610,40 @@
          "fx": 1
         }
        }
+      },
+      {
+       "m": 2,
+       "cell": "艾瑪，驚訝＋流汗",
+       "portrait": {
+        "sprite": "spr_emma_portrait_surprised",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "surprised",
+         "fx": 2
+        }
+       }
+      },
+      {
+       "m": 3,
+       "cell": "艾瑪，驚訝＋臉紅＋流汗",
+       "portrait": {
+        "sprite": "spr_emma_portrait_surprised",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "surprised",
+         "fx": 3
+        }
+       }
       }
      ],
      "sprite": "spr_emma_portrait_surprised",
@@ -2450,7 +2666,9 @@
      "by_design": false,
      "ok": [
       0,
-      1
+      1,
+      2,
+      3
      ],
      "combos": [
       {
@@ -2486,6 +2704,40 @@
          "fx": 1
         }
        }
+      },
+      {
+       "m": 2,
+       "cell": "艾瑪，生氣＋流汗",
+       "portrait": {
+        "sprite": "spr_emma_portrait_angry",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "angry",
+         "fx": 2
+        }
+       }
+      },
+      {
+       "m": 3,
+       "cell": "艾瑪，生氣＋臉紅＋流汗",
+       "portrait": {
+        "sprite": "spr_emma_portrait_angry",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "angry",
+         "fx": 3
+        }
+       }
       }
      ],
      "sprite": "spr_emma_portrait_angry",
@@ -2508,7 +2760,9 @@
      "by_design": false,
      "ok": [
       0,
-      1
+      1,
+      2,
+      3
      ],
      "combos": [
       {
@@ -2544,6 +2798,40 @@
          "fx": 1
         }
        }
+      },
+      {
+       "m": 2,
+       "cell": "艾瑪，睡著＋流汗",
+       "portrait": {
+        "sprite": "spr_emma_portrait_sleep",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "sleep",
+         "fx": 2
+        }
+       }
+      },
+      {
+       "m": 3,
+       "cell": "艾瑪，睡著＋臉紅＋流汗",
+       "portrait": {
+        "sprite": "spr_emma_portrait_sleep",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "sleep",
+         "fx": 3
+        }
+       }
       }
      ],
      "sprite": "spr_emma_portrait_sleep",
@@ -2566,7 +2854,9 @@
      "by_design": false,
      "ok": [
       0,
-      1
+      1,
+      2,
+      3
      ],
      "combos": [
       {
@@ -2600,6 +2890,40 @@
          "set": "normal",
          "face": "shy",
          "fx": 1
+        }
+       }
+      },
+      {
+       "m": 2,
+       "cell": "艾瑪，害羞＋流汗",
+       "portrait": {
+        "sprite": "spr_emma_portrait_shy",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "shy",
+         "fx": 2
+        }
+       }
+      },
+      {
+       "m": 3,
+       "cell": "艾瑪，害羞＋臉紅＋流汗",
+       "portrait": {
+        "sprite": "spr_emma_portrait_shy",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "shy",
+         "fx": 3
         }
        }
       }
@@ -3350,10 +3674,22 @@
    ],
    "legacy_faces": [
     {
+     "key": "平常流汗",
+     "face": "平常",
+     "sweat": true,
+     "blush": false
+    },
+    {
      "key": "平常臉紅",
      "face": "平常",
      "sweat": false,
      "blush": true
+    },
+    {
+     "key": "微笑流汗",
+     "face": "微笑",
+     "sweat": true,
+     "blush": false
     },
     {
      "key": "微笑臉紅",
@@ -3362,10 +3698,22 @@
      "blush": true
     },
     {
+     "key": "溫柔流汗",
+     "face": "溫柔",
+     "sweat": true,
+     "blush": false
+    },
+    {
      "key": "溫柔臉紅",
      "face": "溫柔",
      "sweat": false,
      "blush": true
+    },
+    {
+     "key": "擔心流汗",
+     "face": "擔心",
+     "sweat": true,
+     "blush": false
     },
     {
      "key": "擔心臉紅",
@@ -3374,10 +3722,22 @@
      "blush": true
     },
     {
+     "key": "難過流汗",
+     "face": "難過",
+     "sweat": true,
+     "blush": false
+    },
+    {
      "key": "難過臉紅",
      "face": "難過",
      "sweat": false,
      "blush": true
+    },
+    {
+     "key": "驚訝流汗",
+     "face": "驚訝",
+     "sweat": true,
+     "blush": false
     },
     {
      "key": "驚訝臉紅",
@@ -3386,16 +3746,34 @@
      "blush": true
     },
     {
+     "key": "生氣流汗",
+     "face": "生氣",
+     "sweat": true,
+     "blush": false
+    },
+    {
      "key": "生氣臉紅",
      "face": "生氣",
      "sweat": false,
      "blush": true
     },
     {
+     "key": "睡著流汗",
+     "face": "睡著",
+     "sweat": true,
+     "blush": false
+    },
+    {
      "key": "睡著臉紅",
      "face": "睡著",
      "sweat": false,
      "blush": true
+    },
+    {
+     "key": "害羞流汗",
+     "face": "害羞",
+     "sweat": true,
+     "blush": false
     },
     {
      "key": "害羞臉紅",
