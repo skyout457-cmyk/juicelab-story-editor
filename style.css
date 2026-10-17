@@ -40,3 +40,4 @@ li.line.act .num{color:#e0b347;font-weight:700}
 .fx button.fxb.on{background:#7a5bd1;border-color:#a58bf0;font-weight:700}
 .fx button.fxb:disabled{opacity:.35;text-decoration:line-through}
 .fx.none button.fxb{opacity:.25}
+.fx select.fxsel{min-height:48px;font-size:15px;background:#2b2533;color:inherit;border:1px solid #514862}

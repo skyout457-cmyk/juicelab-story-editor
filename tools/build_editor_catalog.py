@@ -70,7 +70,6 @@ def main():
                 none = f.get("fx") == "none_by_design"
                 face_layers = [] if none else layers
                 faces.append({"key": key, "set": st["id"], "face": f["key"], "layers": face_layers,
-                              "snap": st.get("states") == "by_design",
                               "by_design": none,
                               "ok": [x["m"] for x in combos], "combos": combos,
                               "sprite": combos[0]["portrait"]["sprite"], "frame": combos[0]["portrait"]["frame"]})

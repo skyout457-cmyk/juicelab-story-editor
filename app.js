@@ -28,17 +28,6 @@ const FX_BIT = Object.fromEntries(FX);
 const faceOf = (sp, key) => sp ? sp.faces.find(f => f.key === key) : null;
 const maskOf = l => FX.reduce((m, [k, b]) => m | (l[k] ? b : 0), 0);
 const maskOk = (f, m) => !!f && (f.ok || [0]).includes(m);
-// 2026-10-17 (aftersoak_unify)：設計上固定組合的表情（歐菲／艾瑪／瑪琪娜秘湯，catalog faces[].snap）：開關跳到最近的有效狀態，
-// 規則同遊戲 portrait_spec_snap_toggle／tools/portrait_spec.py snap_toggle。沒有就回 -1。
-const popc = m => [1, 2, 4, 8].filter(b => m & b).length;
-const snapMask = (f, m, bit) => {
-  const on = !(m & bit), want = on ? (m | bit) : (m & ~bit), ok = (f && f.ok) || [0];
-  if (ok.includes(want)) return want;
-  const c = ok.filter(x => on ? (x & want) === want : (x & ~want) === 0);
-  if (!c.length) return -1;
-  return c.reduce((a, x) => on ? ((popc(x) < popc(a) || (popc(x) === popc(a) && x < a)) ? x : a)
-                                : ((popc(x) > popc(a) || (popc(x) === popc(a) && x > a)) ? x : a));
-};
 const fxOk = (sp, l) => sp && sp.kind === 'narration' ? maskOf(l) === 0 : maskOk(faceOf(sp, l.face), maskOf(l));
 const fxName = (f, m) => (f && f.layers ? f.layers : []).filter(x => m & FX_BIT[x.k]).map(x => x.label).join('＋') || '無效果';
 // 舊檔一個表情一個鍵（「平常流汗」）：讀進來拆成表情＋開關。
@@ -96,32 +85,30 @@ function lineCard(l, i) {
     (f && f.layers ? f.layers : []).forEach(x => {
       const bit = FX_BIT[x.k], on = !!(m & bit), b = el('button', 'fxb', [x.label]);
       b.type = 'button'; b.classList.toggle('on', on); b.setAttribute('aria-pressed', on ? 'true' : 'false');
-      if (f.snap) {
-        const t = snapMask(f, m, bit);
-        b.disabled = t < 0;
-        b.title = t >= 0 && t !== (m ^ bit) ? `→ ${fxName(f, t)}` : '';
-        b.onclick = () => { if (t < 0) return; FX.forEach(([k, bb]) => { l[k] = !!(t & bb); }); save(); paintFx(); check(); };
-        fxBox.append(b); return;
-      }
-      const can = maskOk(f, m | bit);
-      b.disabled = !on && !can;
-      b.title = on ? '' : !can ? (maskOk(f, bit) ? `沒有${fxName(f, m | bit)}一起的圖` : `「${f.key}」沒有${x.label}的圖`) : '';
+      // 2026-10-17 (no_snap)：按下去的結果沒有圖就不顯示這個按鈕（不跳到別的組合）。
+      if (!maskOk(f, m ^ bit)) return;
       b.onclick = () => { l[x.k] = !l[x.k]; save(); paintFx(); check(); };
       fxBox.append(b);
     });
+    // 這個表情所有有圖的組合（單選）：只列真的有圖的，例如歐菲秘湯＝無效果／臉紅＋秘湯汗／臉紅＋秘湯汗＋泡後身體。
+    const ok = (f && f.ok) || [0];
+    if (f && ok.length > 1) {
+      const sel = el('select', 'fxsel');
+      sel.setAttribute('aria-label', '效果組合');
+      if (!ok.includes(m)) { const o = el('option', '', ['（請選效果）']); o.value = ''; o.selected = true; o.disabled = true; sel.append(o); }
+      ok.forEach(x => { const o = el('option', '', [fxName(f, x)]); o.value = String(x); o.selected = x === m; sel.append(o); });
+      sel.onchange = () => { const t = Number(sel.value); FX.forEach(([k, bb]) => { l[k] = !!(t & bb); }); save(); paintFx(); check(); };
+      fxBox.append(sel);
+    }
     fxBox.classList.toggle('none', !f || (f.ok || [0]).length < 2);
   };
   if (sp && sp.kind === 'narration') { FX.forEach(([k]) => { l[k] = false; }); fxBox.hidden = true; }
   const check = () => { const p = lineProblems(l); warn.textContent = p.join('、'); li.classList.toggle('bad', p.length > 0 && !!(l.who || l.text)); };
   who.onchange = () => { l.who = who.value; const s = speaker(l.who); if (!s || !s.faces.some(f => f.key === l.face)) l.face = ''; if (s && s.kind === 'narration') { l.emote = ''; if (!l.text) l.text = '（）'; } save(); renderLines(); };
   face.onchange = () => { l.face = face.value;
-    // 新表情沒有目前開著的組合：明確關掉並提示（不偷偷換圖）。
+    // 新表情沒有目前的組合：不自動換成別的（no_snap），這一行標紅，請從組合清單重選。
     const f = faceOf(sp, l.face), m = maskOf(l);
-    if (f && m && !maskOk(f, m)) {
-      const was = fxName(f, m);
-      [...FX].reverse().forEach(([k]) => { if (l[k] && !maskOk(f, maskOf(l))) l[k] = false; });
-      if (!f.snap) toast(`「${f.key}」沒有${was}的圖，已關掉`);  // 固定組合的套裝：直接落到有效狀態，不算缺圖
-    }
+    if (f && m && !maskOk(f, m)) toast(`「${f.key}」沒有${fxName(f, m)}的圖，請重選效果`);
     save(); paintFx(); check(); };
   emo.onchange = () => { l.emote = emo.value; save(); };
   tx.oninput = () => { if (S.autoFw && hasHalf(tx.value)) { const p = tx.selectionStart; tx.value = toFw(tx.value); tx.setSelectionRange(p, p); } l.text = tx.value; save(); check(); };

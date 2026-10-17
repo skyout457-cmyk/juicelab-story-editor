@@ -20,7 +20,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -115,7 +114,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -243,7 +241,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -338,7 +335,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -433,7 +429,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -528,7 +523,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -623,7 +617,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -718,7 +711,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -813,7 +805,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -908,7 +899,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -1003,7 +993,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -1089,7 +1078,6 @@
      "set": "normal",
      "face": "injured",
      "layers": [],
-     "snap": false,
      "by_design": true,
      "ok": [
       0
@@ -1121,7 +1109,6 @@
      "set": "normal",
      "face": "injured_calm",
      "layers": [],
-     "snap": false,
      "by_design": true,
      "ok": [
       0
@@ -1153,7 +1140,6 @@
      "set": "normal",
      "face": "injured_pain",
      "layers": [],
-     "snap": false,
      "by_design": true,
      "ok": [
       0
@@ -1185,7 +1171,6 @@
      "set": "normal",
      "face": "injured_smile",
      "layers": [],
-     "snap": false,
      "by_design": true,
      "ok": [
       0
@@ -1217,7 +1202,6 @@
      "set": "normal",
      "face": "injured_closed",
      "layers": [],
-     "snap": false,
      "by_design": true,
      "ok": [
       0
@@ -1262,7 +1246,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -1343,7 +1326,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -1424,7 +1406,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -1505,7 +1486,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -1586,7 +1566,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -1667,7 +1646,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -1748,7 +1726,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -1829,7 +1806,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -1910,7 +1886,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -2102,9 +2077,12 @@
       {
        "k": "sweat",
        "label": "流汗"
+      },
+      {
+       "k": "tears",
+       "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -2197,9 +2175,12 @@
       {
        "k": "sweat",
        "label": "流汗"
+      },
+      {
+       "k": "tears",
+       "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -2292,9 +2273,12 @@
       {
        "k": "sweat",
        "label": "流汗"
+      },
+      {
+       "k": "tears",
+       "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -2387,9 +2371,12 @@
       {
        "k": "sweat",
        "label": "流汗"
+      },
+      {
+       "k": "tears",
+       "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -2482,15 +2469,22 @@
       {
        "k": "sweat",
        "label": "流汗"
+      },
+      {
+       "k": "tears",
+       "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
       1,
       2,
-      3
+      3,
+      8,
+      9,
+      10,
+      11
      ],
      "combos": [
       {
@@ -2560,6 +2554,74 @@
          "fx": 3
         }
        }
+      },
+      {
+       "m": 8,
+       "cell": "艾瑪，難過＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_sad",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "sad",
+         "fx": 8
+        }
+       }
+      },
+      {
+       "m": 9,
+       "cell": "艾瑪，難過＋臉紅＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_sad",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "sad",
+         "fx": 9
+        }
+       }
+      },
+      {
+       "m": 10,
+       "cell": "艾瑪，難過＋流汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_sad",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "sad",
+         "fx": 10
+        }
+       }
+      },
+      {
+       "m": 11,
+       "cell": "艾瑪，難過＋臉紅＋流汗＋眼淚",
+       "portrait": {
+        "sprite": "spr_emma_portrait_sad",
+        "frame": 1,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "sad",
+         "fx": 11
+        }
+       }
       }
      ],
      "sprite": "spr_emma_portrait_sad",
@@ -2577,9 +2639,12 @@
       {
        "k": "sweat",
        "label": "流汗"
+      },
+      {
+       "k": "tears",
+       "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -2672,9 +2737,12 @@
       {
        "k": "sweat",
        "label": "流汗"
+      },
+      {
+       "k": "tears",
+       "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -2767,9 +2835,12 @@
       {
        "k": "sweat",
        "label": "流汗"
+      },
+      {
+       "k": "tears",
+       "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -2862,9 +2933,12 @@
       {
        "k": "sweat",
        "label": "流汗"
+      },
+      {
+       "k": "tears",
+       "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -2963,7 +3037,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -3044,7 +3117,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -3125,7 +3197,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -3206,7 +3277,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -3287,7 +3357,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -3368,7 +3437,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -3449,7 +3517,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -3530,7 +3597,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -3611,7 +3677,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -3825,7 +3890,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -3920,7 +3984,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -4015,7 +4078,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -4110,7 +4172,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -4205,7 +4266,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -4300,7 +4360,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -4395,7 +4454,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -4490,7 +4548,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -4585,7 +4642,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -4684,7 +4740,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -4765,7 +4820,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -4846,7 +4900,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -4927,7 +4980,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -5008,7 +5060,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -5089,7 +5140,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -5170,7 +5220,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -5251,7 +5300,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -5332,7 +5380,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -5530,7 +5577,6 @@
        "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -5629,7 +5675,6 @@
        "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -5728,7 +5773,6 @@
        "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -5827,7 +5871,6 @@
        "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -5926,7 +5969,6 @@
        "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -6097,7 +6139,6 @@
        "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -6196,7 +6237,6 @@
        "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -6295,7 +6335,6 @@
        "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -6394,7 +6433,6 @@
        "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -6497,7 +6535,6 @@
        "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -6672,7 +6709,6 @@
        "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -6847,7 +6883,6 @@
        "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -7022,7 +7057,6 @@
        "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -7197,7 +7231,6 @@
        "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -7516,7 +7549,6 @@
        "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -7691,7 +7723,6 @@
        "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -7866,7 +7897,6 @@
        "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -8041,7 +8071,6 @@
        "label": "眼淚"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -8325,7 +8354,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -8420,7 +8448,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -8515,7 +8542,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -8610,7 +8636,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -8705,7 +8730,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -8800,7 +8824,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -8895,7 +8918,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -8990,7 +9012,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -9085,7 +9106,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -9184,7 +9204,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -9355,7 +9374,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -9526,7 +9544,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -9697,7 +9714,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -9868,7 +9884,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -10039,7 +10054,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -10210,7 +10224,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -10381,7 +10394,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -10552,7 +10564,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -10836,7 +10847,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -10931,7 +10941,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -11026,7 +11035,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -11121,7 +11129,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -11216,7 +11223,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -11311,7 +11317,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -11406,7 +11411,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -11501,7 +11505,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -11596,7 +11599,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -11695,7 +11697,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -11866,7 +11867,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -12037,7 +12037,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -12208,7 +12207,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -12379,7 +12377,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -12550,7 +12547,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -12721,7 +12717,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -12892,7 +12887,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -13063,7 +13057,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -13347,7 +13340,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -13442,7 +13434,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -13537,7 +13528,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -13632,7 +13622,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -13727,7 +13716,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -13822,7 +13810,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -13917,7 +13904,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -14012,7 +13998,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -14107,7 +14092,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -14206,7 +14190,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -14377,7 +14360,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -14548,7 +14530,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -14719,7 +14700,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -14890,7 +14870,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -15061,7 +15040,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -15232,7 +15210,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -15403,7 +15380,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -15574,7 +15550,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -15858,7 +15833,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -15953,7 +15927,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -16048,7 +16021,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -16143,7 +16115,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -16238,7 +16209,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -16333,7 +16303,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -16428,7 +16397,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -16523,7 +16491,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -16618,7 +16585,6 @@
        "label": "流汗"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -16717,7 +16683,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -16888,7 +16853,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -17059,7 +17023,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -17230,7 +17193,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -17401,7 +17363,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -17572,7 +17533,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -17743,7 +17703,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -17914,7 +17873,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -18085,7 +18043,6 @@
        "label": "泡後身體"
       }
      ],
-     "snap": false,
      "by_design": false,
      "ok": [
       0,
