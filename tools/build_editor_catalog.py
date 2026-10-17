@@ -4,37 +4,35 @@
   python3 tools/build_editor_catalog.py [--game /workspace/tg/base] [--out catalog.json]
 
 Sources (re-run whenever the game grows):
-  - tools/storyboard_convert.py : FACE_KEYS, TEXT_PORTRAITS, FX_FRAMES, EMOTE_NUMBERS
-  - scripts/scr_orc_portrait, scr_ophelia_portrait : portrait expression enums
+  - datafiles/portraits/portrait_spec.json (tools/portrait_spec.py) : speakers, sets, faces, effect layers
+  - tools/storyboard_convert.py : TSV cells / portrait dicts per combination, TEXT_PORTRAITS, EMOTE_NUMBERS
   - docs/event_format.md : emote number/key/Chinese name table
 Only names/keys are written (no story text, no art).
 """
-import argparse, importlib.util, json, os, re
+import argparse, importlib.util, json, os, re, sys
 
-# Chinese labels for the portrait enums (enum name -> label). Unknown enums get the English name.
-ENUM_LABELS = {"Neutral": "平常", "Triangle": "三角嘴", "Smile": "微笑", "Gentle": "溫柔",
-               "Worried": "擔心", "Sad": "難過", "Surprised": "驚訝", "Angry": "生氣",
-               "Sleep": "睡著", "Shy": "害羞"}
-# speakers shown in the editor: id -> (label, portrait enum script, sprite prefix)
-SPEAKERS = [("orc", "歐克", "scr_orc_portrait", "OrcPortraitExpression"),
-            ("ophelia", "歐菲", "scr_ophelia_portrait", "OpheliaPortraitExpression"),
-            ("emma", "艾瑪", "scr_emma_portrait", "EmmaPortraitExpression"),
-            ("makina", "瑪琪娜", "scr_makina_portrait", "MakinaPortraitExpression")]
-# 2026-10-17 (editor_fx): 流汗／臉紅 are two independent toggles on every face. Availability comes
-# from the converter's FX_LAYOUT (mask 臉紅 1 | 流汗 2 -> frame) checked against the real frame
-# count in sprites/<name>/<name>.yy (sprite_frames, incl. the orc's virtual composite frame 3).
-FX_KEYS = {"blush": 1, "sweat": 2, "both": 3}
+# 2026-10-17 (viewer_fx): speakers, faces, sets (一般／秘湯) and effect layers all come from the game's
+# datafiles/portraits/portrait_spec.json via tools/portrait_spec.py — the same spec the game's
+# portrait viewer, the event player and tools/storyboard_convert.py use. Each face lists only the
+# mask combinations the art really has ("combos"); each combo carries the exact TSV cell and the
+# converter's own portrait dict (sprite / frame / spec), so editor -> TSV -> JSON cannot drift.
+FX_KEY = {1: "blush", 2: "sweat", 4: "body", 8: "tears"}
+FX_WORD = {1: "臉紅", 4: "身體紅潤", 8: "眼淚"}
 
 def load_converter(game):
+    sys.path.insert(0, os.path.join(game, "tools"))
     p = os.path.join(game, "tools", "storyboard_convert.py")
     spec = importlib.util.spec_from_file_location("sbc", p)
     m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
     return m
 
-def enum_names(game, script, enum):
-    src = open(os.path.join(game, "scripts", script, script + ".gml"), encoding="utf-8").read()
-    body = re.search(r"enum\s+%s\s*\{(.*?)\}" % enum, src, re.S).group(1)
-    return [n for n, _ in re.findall(r"(\w+)\s*=\s*(\d+)", body)]
+def cell_for(c, s, f, m):
+    words = (["秘湯"] if s["id"] == "onsen" else []) + [f["label"]]
+    words += [FX_WORD.get(b, "秘湯汗" if s["id"] == "onsen" else "流汗") for b in (1, 2, 4, 8) if m & b]
+    return c["words"][0] + "，" + "＋".join(words)
+
+class Rep:
+    def __init__(self): self.errors, self.warnings, self.missing_art, self.suggest = [], [], [], []
 
 def emote_names(game):
     doc = open(os.path.join(game, "docs", "event_format.md"), encoding="utf-8").read()
@@ -43,14 +41,6 @@ def emote_names(game):
         names[int(n)] = (key, zh)
     return names
 
-def face_fx(sbc, sid, spr):
-    """{"sweat": frame|None, "blush": frame|None, "both": frame|None} for a base-expression sprite"""
-    layout = getattr(sbc, "FX_LAYOUT", {}).get(sid, {0: 0})
-    n = sbc.sprite_frames(spr) or 0
-    return {k: (layout[m] if m in layout and layout[m] < n else None) for k, m in FX_KEYS.items()}
-
-NO_FX = {"sweat": None, "blush": None, "both": None}
-
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--game", default="/workspace/tg/base")
@@ -58,28 +48,38 @@ def main():
     a = ap.parse_args()
     sbc = load_converter(a.game)
     sbc.PROJECT = a.game
+    ps = sbc.portrait_spec
     speakers = []
-    for sid, label, script, enum in SPEAKERS:
-        faces = []
-        for e in enum_names(a.game, script, enum):
-            spr = "spr_%s_portrait_%s" % (sid, e.lower())
-            zh = ENUM_LABELS.get(e, e)
-            if sbc.sprite_frames(spr) is None:
-                continue  # enum entry without art: not offered
-            faces.append({"key": zh, "sprite": spr, "frame": 0, "fx": face_fx(sbc, sid, spr)})
+    for c in ps.load()["characters"]:
+        faces, legacy = [], []
+        for st in c["sets"]:
+            layers = [{"k": FX_KEY[l["bit"]], "label": l["label"]} for l in st["layers"]]
+            for f in st["faces"]:
+                combos = []
+                for m in ps.masks(c["id"], st["id"]):
+                    ops, _ = ps.resolve(c["id"], st["id"], f["key"], m)
+                    if not ops:
+                        continue
+                    cell, rep = cell_for(c, st, f, m), Rep()
+                    out = sbc.parse_portraits(cell, "catalog", rep)
+                    if rep.errors or len(out) != 1:
+                        sys.exit("converter disagrees with spec: %s %s" % (cell, rep.errors))
+                    combos.append({"m": m, "cell": cell, "portrait": out[0]})
+                key = ("秘湯・" if st["id"] == "onsen" else "") + f["label"]
+                faces.append({"key": key, "set": st["id"], "face": f["key"], "layers": layers,
+                              "ok": [x["m"] for x in combos], "combos": combos,
+                              "sprite": combos[0]["portrait"]["sprite"], "frame": combos[0]["portrait"]["frame"]})
+                # old exports wrote one key per FX frame (「平常流汗」); keep reading them
+                if st["id"] == "normal":
+                    for word, k, m in (("流汗", "sweat", 2), ("臉紅", "blush", 1)):
+                        if m in faces[-1]["ok"]:
+                            legacy.append({"key": key + word, "face": key, "sweat": k == "sweat", "blush": k == "blush"})
         for (who, word), spr in sbc.TEXT_PORTRAITS.items():
-            if who == sid and not any(f["sprite"] == spr for f in faces):
-                faces.append({"key": word, "sprite": spr, "frame": 0, "fx": dict(NO_FX), "note": "立繪可能還在重畫"})
-        for (who, key), (spr, fr) in sbc.FACE_KEYS.items():
-            if who == sid:
-                faces.append({"key": key, "sprite": spr, "frame": fr, "fx": dict(NO_FX)})
-        # old exports wrote one key per FX frame (「平常流汗」); keep reading them
-        legacy = []
-        for f in faces:
-            for word, k in (("流汗", "sweat"), ("臉紅", "blush")):
-                if f["fx"][k] is not None:
-                    legacy.append({"key": f["key"] + word, "face": f["key"], "sweat": k == "sweat", "blush": k == "blush"})
-        speakers.append({"id": sid, "label": label, "kind": "speech", "faces": faces, "legacy_faces": legacy})
+            if who == c["id"] and sbc.sprite_frames(spr) is None and not any(f["key"] == word for f in faces):
+                faces.append({"key": word, "set": "normal", "face": "", "layers": [], "ok": [0], "missing": True,
+                              "combos": [{"m": 0, "cell": c["words"][0] + "，" + word, "portrait": None}],
+                              "sprite": spr, "frame": 0, "note": "還沒有圖（缺圖卡）"})
+        speakers.append({"id": c["id"], "label": c["name"], "kind": "speech", "faces": faces, "legacy_faces": legacy})
     speakers.append({"id": "narrator", "label": "旁白", "kind": "narration", "faces": [],
                      "hint": "客觀敘述，台詞用全形括號（）包住；沒有名牌、沒有立繪"})
     names = emote_names(a.game)
@@ -93,7 +93,7 @@ def main():
     print("wrote", a.out, {s["label"]: len(s["faces"]) for s in speakers}, "emotes", len(emotes))
     for s in speakers:
         for f in s["faces"]:
-            print("  %s %s %s %s" % (s["label"], f["key"], f["sprite"], f.get("fx")))
+            print("  %s %s ok=%s" % (s["label"], f["key"], f.get("ok")))
 
 if __name__ == "__main__":
     main()
