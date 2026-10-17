@@ -2912,6 +2912,68 @@
      "frame": 0
     },
     {
+     "key": "含淚微笑",
+     "set": "normal",
+     "face": "teary_smile",
+     "layers": [],
+     "by_design": true,
+     "ok": [
+      0
+     ],
+     "combos": [
+      {
+       "m": 0,
+       "cell": "艾瑪，含淚微笑",
+       "portrait": {
+        "sprite": "spr_emma_portrait_sleep",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "teary_smile",
+         "fx": 0
+        }
+       }
+      }
+     ],
+     "sprite": "spr_emma_portrait_sleep",
+     "frame": 0
+    },
+    {
+     "key": "哭泣",
+     "set": "normal",
+     "face": "crying",
+     "layers": [],
+     "by_design": true,
+     "ok": [
+      0
+     ],
+     "combos": [
+      {
+       "m": 0,
+       "cell": "艾瑪，哭泣",
+       "portrait": {
+        "sprite": "spr_emma_portrait_sleep",
+        "frame": 0,
+        "who": "emma",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "emma",
+         "set": "normal",
+         "face": "crying",
+         "fx": 0
+        }
+       }
+      }
+     ],
+     "sprite": "spr_emma_portrait_sleep",
+     "frame": 0
+    },
+    {
      "key": "秘湯・平常",
      "set": "onsen",
      "face": "neutral",
@@ -3630,26 +3692,6 @@
      ],
      "sprite": "spr_emma_onsen_shy",
      "frame": 0
-    },
-    {
-     "key": "含淚微笑",
-     "set": "normal",
-     "face": "",
-     "layers": [],
-     "ok": [
-      0
-     ],
-     "missing": true,
-     "combos": [
-      {
-       "m": 0,
-       "cell": "艾瑪，含淚微笑",
-       "portrait": null
-      }
-     ],
-     "sprite": "spr_emma_portrait_teary_smile",
-     "frame": 0,
-     "note": "還沒有圖（缺圖卡）"
     }
    ],
    "legacy_faces": [
