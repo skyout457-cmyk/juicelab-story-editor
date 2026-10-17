@@ -9,38 +9,59 @@
     {
      "key": "平常",
      "sprite": "spr_orc_portrait_neutral",
-     "frame": 0
-    },
-    {
-     "key": "平常流汗",
-     "sprite": "spr_orc_portrait_neutral",
-     "frame": 1
-    },
-    {
-     "key": "平常臉紅",
-     "sprite": "spr_orc_portrait_neutral",
-     "frame": 2
+     "frame": 0,
+     "fx": {
+      "blush": 2,
+      "sweat": 1,
+      "both": 3
+     }
     },
     {
      "key": "三角嘴",
      "sprite": "spr_orc_portrait_triangle",
-     "frame": 0
-    },
-    {
-     "key": "三角嘴流汗",
-     "sprite": "spr_orc_portrait_triangle",
-     "frame": 1
-    },
-    {
-     "key": "三角嘴臉紅",
-     "sprite": "spr_orc_portrait_triangle",
-     "frame": 2
+     "frame": 0,
+     "fx": {
+      "blush": 2,
+      "sweat": 1,
+      "both": 3
+     }
     },
     {
      "key": "得意",
      "sprite": "spr_orc_portrait_smug",
      "frame": 0,
+     "fx": {
+      "sweat": null,
+      "blush": null,
+      "both": null
+     },
      "note": "立繪可能還在重畫"
+    }
+   ],
+   "legacy_faces": [
+    {
+     "key": "平常流汗",
+     "face": "平常",
+     "sweat": true,
+     "blush": false
+    },
+    {
+     "key": "平常臉紅",
+     "face": "平常",
+     "sweat": false,
+     "blush": true
+    },
+    {
+     "key": "三角嘴流汗",
+     "face": "三角嘴",
+     "sweat": true,
+     "blush": false
+    },
+    {
+     "key": "三角嘴臉紅",
+     "face": "三角嘴",
+     "sweat": false,
+     "blush": true
     }
    ]
   },
@@ -52,72 +73,623 @@
     {
      "key": "平常",
      "sprite": "spr_ophelia_portrait_neutral",
-     "frame": 0
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": 2,
+      "both": 3
+     }
     },
     {
      "key": "微笑",
      "sprite": "spr_ophelia_portrait_smile",
-     "frame": 0
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": 2,
+      "both": 3
+     }
     },
     {
      "key": "溫柔",
      "sprite": "spr_ophelia_portrait_gentle",
-     "frame": 0
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": 2,
+      "both": 3
+     }
     },
     {
      "key": "擔心",
      "sprite": "spr_ophelia_portrait_worried",
-     "frame": 0
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": 2,
+      "both": 3
+     }
     },
     {
      "key": "難過",
      "sprite": "spr_ophelia_portrait_sad",
-     "frame": 0
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": 2,
+      "both": 3
+     }
     },
     {
      "key": "驚訝",
      "sprite": "spr_ophelia_portrait_surprised",
-     "frame": 0
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": 2,
+      "both": 3
+     }
     },
     {
      "key": "生氣",
      "sprite": "spr_ophelia_portrait_angry",
-     "frame": 0
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": 2,
+      "both": 3
+     }
     },
     {
      "key": "睡著",
      "sprite": "spr_ophelia_portrait_sleep",
-     "frame": 0
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": 2,
+      "both": 3
+     }
     },
     {
      "key": "害羞",
      "sprite": "spr_ophelia_portrait_shy",
-     "frame": 0
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": 2,
+      "both": 3
+     }
     },
     {
      "key": "受傷",
      "sprite": "spr_ophelia_portrait_injured",
-     "frame": 0
+     "frame": 0,
+     "fx": {
+      "sweat": null,
+      "blush": null,
+      "both": null
+     }
     },
     {
      "key": "受傷平靜",
      "sprite": "spr_ophelia_portrait_injured",
-     "frame": 1
+     "frame": 1,
+     "fx": {
+      "sweat": null,
+      "blush": null,
+      "both": null
+     }
     },
     {
      "key": "受傷忍痛",
      "sprite": "spr_ophelia_portrait_injured",
-     "frame": 2
+     "frame": 2,
+     "fx": {
+      "sweat": null,
+      "blush": null,
+      "both": null
+     }
     },
     {
      "key": "受傷微笑",
      "sprite": "spr_ophelia_portrait_injured",
-     "frame": 3
+     "frame": 3,
+     "fx": {
+      "sweat": null,
+      "blush": null,
+      "both": null
+     }
     },
     {
      "key": "受傷閉眼",
      "sprite": "spr_ophelia_portrait_injured",
-     "frame": 4
+     "frame": 4,
+     "fx": {
+      "sweat": null,
+      "blush": null,
+      "both": null
+     }
+    }
+   ],
+   "legacy_faces": [
+    {
+     "key": "平常流汗",
+     "face": "平常",
+     "sweat": true,
+     "blush": false
+    },
+    {
+     "key": "平常臉紅",
+     "face": "平常",
+     "sweat": false,
+     "blush": true
+    },
+    {
+     "key": "微笑流汗",
+     "face": "微笑",
+     "sweat": true,
+     "blush": false
+    },
+    {
+     "key": "微笑臉紅",
+     "face": "微笑",
+     "sweat": false,
+     "blush": true
+    },
+    {
+     "key": "溫柔流汗",
+     "face": "溫柔",
+     "sweat": true,
+     "blush": false
+    },
+    {
+     "key": "溫柔臉紅",
+     "face": "溫柔",
+     "sweat": false,
+     "blush": true
+    },
+    {
+     "key": "擔心流汗",
+     "face": "擔心",
+     "sweat": true,
+     "blush": false
+    },
+    {
+     "key": "擔心臉紅",
+     "face": "擔心",
+     "sweat": false,
+     "blush": true
+    },
+    {
+     "key": "難過流汗",
+     "face": "難過",
+     "sweat": true,
+     "blush": false
+    },
+    {
+     "key": "難過臉紅",
+     "face": "難過",
+     "sweat": false,
+     "blush": true
+    },
+    {
+     "key": "驚訝流汗",
+     "face": "驚訝",
+     "sweat": true,
+     "blush": false
+    },
+    {
+     "key": "驚訝臉紅",
+     "face": "驚訝",
+     "sweat": false,
+     "blush": true
+    },
+    {
+     "key": "生氣流汗",
+     "face": "生氣",
+     "sweat": true,
+     "blush": false
+    },
+    {
+     "key": "生氣臉紅",
+     "face": "生氣",
+     "sweat": false,
+     "blush": true
+    },
+    {
+     "key": "睡著流汗",
+     "face": "睡著",
+     "sweat": true,
+     "blush": false
+    },
+    {
+     "key": "睡著臉紅",
+     "face": "睡著",
+     "sweat": false,
+     "blush": true
+    },
+    {
+     "key": "害羞流汗",
+     "face": "害羞",
+     "sweat": true,
+     "blush": false
+    },
+    {
+     "key": "害羞臉紅",
+     "face": "害羞",
+     "sweat": false,
+     "blush": true
+    }
+   ]
+  },
+  {
+   "id": "emma",
+   "label": "艾瑪",
+   "kind": "speech",
+   "faces": [
+    {
+     "key": "平常",
+     "sprite": "spr_emma_portrait_neutral",
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": null,
+      "both": null
+     }
+    },
+    {
+     "key": "微笑",
+     "sprite": "spr_emma_portrait_smile",
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": null,
+      "both": null
+     }
+    },
+    {
+     "key": "溫柔",
+     "sprite": "spr_emma_portrait_gentle",
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": null,
+      "both": null
+     }
+    },
+    {
+     "key": "擔心",
+     "sprite": "spr_emma_portrait_worried",
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": null,
+      "both": null
+     }
+    },
+    {
+     "key": "難過",
+     "sprite": "spr_emma_portrait_sad",
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": null,
+      "both": null
+     }
+    },
+    {
+     "key": "驚訝",
+     "sprite": "spr_emma_portrait_surprised",
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": null,
+      "both": null
+     }
+    },
+    {
+     "key": "生氣",
+     "sprite": "spr_emma_portrait_angry",
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": null,
+      "both": null
+     }
+    },
+    {
+     "key": "睡著",
+     "sprite": "spr_emma_portrait_sleep",
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": null,
+      "both": null
+     }
+    },
+    {
+     "key": "害羞",
+     "sprite": "spr_emma_portrait_shy",
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": null,
+      "both": null
+     }
+    },
+    {
+     "key": "含淚微笑",
+     "sprite": "spr_emma_portrait_teary_smile",
+     "frame": 0,
+     "fx": {
+      "sweat": null,
+      "blush": null,
+      "both": null
+     },
+     "note": "立繪可能還在重畫"
+    }
+   ],
+   "legacy_faces": [
+    {
+     "key": "平常臉紅",
+     "face": "平常",
+     "sweat": false,
+     "blush": true
+    },
+    {
+     "key": "微笑臉紅",
+     "face": "微笑",
+     "sweat": false,
+     "blush": true
+    },
+    {
+     "key": "溫柔臉紅",
+     "face": "溫柔",
+     "sweat": false,
+     "blush": true
+    },
+    {
+     "key": "擔心臉紅",
+     "face": "擔心",
+     "sweat": false,
+     "blush": true
+    },
+    {
+     "key": "難過臉紅",
+     "face": "難過",
+     "sweat": false,
+     "blush": true
+    },
+    {
+     "key": "驚訝臉紅",
+     "face": "驚訝",
+     "sweat": false,
+     "blush": true
+    },
+    {
+     "key": "生氣臉紅",
+     "face": "生氣",
+     "sweat": false,
+     "blush": true
+    },
+    {
+     "key": "睡著臉紅",
+     "face": "睡著",
+     "sweat": false,
+     "blush": true
+    },
+    {
+     "key": "害羞臉紅",
+     "face": "害羞",
+     "sweat": false,
+     "blush": true
+    }
+   ]
+  },
+  {
+   "id": "makina",
+   "label": "瑪琪娜",
+   "kind": "speech",
+   "faces": [
+    {
+     "key": "平常",
+     "sprite": "spr_makina_portrait_neutral",
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": 2,
+      "both": 3
+     }
+    },
+    {
+     "key": "微笑",
+     "sprite": "spr_makina_portrait_smile",
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": 2,
+      "both": 3
+     }
+    },
+    {
+     "key": "溫柔",
+     "sprite": "spr_makina_portrait_gentle",
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": 2,
+      "both": 3
+     }
+    },
+    {
+     "key": "擔心",
+     "sprite": "spr_makina_portrait_worried",
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": 2,
+      "both": 3
+     }
+    },
+    {
+     "key": "難過",
+     "sprite": "spr_makina_portrait_sad",
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": 2,
+      "both": 3
+     }
+    },
+    {
+     "key": "驚訝",
+     "sprite": "spr_makina_portrait_surprised",
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": 2,
+      "both": 3
+     }
+    },
+    {
+     "key": "生氣",
+     "sprite": "spr_makina_portrait_angry",
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": 2,
+      "both": 3
+     }
+    },
+    {
+     "key": "睡著",
+     "sprite": "spr_makina_portrait_sleep",
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": 2,
+      "both": 3
+     }
+    },
+    {
+     "key": "害羞",
+     "sprite": "spr_makina_portrait_shy",
+     "frame": 0,
+     "fx": {
+      "blush": 1,
+      "sweat": 2,
+      "both": 3
+     }
+    }
+   ],
+   "legacy_faces": [
+    {
+     "key": "平常流汗",
+     "face": "平常",
+     "sweat": true,
+     "blush": false
+    },
+    {
+     "key": "平常臉紅",
+     "face": "平常",
+     "sweat": false,
+     "blush": true
+    },
+    {
+     "key": "微笑流汗",
+     "face": "微笑",
+     "sweat": true,
+     "blush": false
+    },
+    {
+     "key": "微笑臉紅",
+     "face": "微笑",
+     "sweat": false,
+     "blush": true
+    },
+    {
+     "key": "溫柔流汗",
+     "face": "溫柔",
+     "sweat": true,
+     "blush": false
+    },
+    {
+     "key": "溫柔臉紅",
+     "face": "溫柔",
+     "sweat": false,
+     "blush": true
+    },
+    {
+     "key": "擔心流汗",
+     "face": "擔心",
+     "sweat": true,
+     "blush": false
+    },
+    {
+     "key": "擔心臉紅",
+     "face": "擔心",
+     "sweat": false,
+     "blush": true
+    },
+    {
+     "key": "難過流汗",
+     "face": "難過",
+     "sweat": true,
+     "blush": false
+    },
+    {
+     "key": "難過臉紅",
+     "face": "難過",
+     "sweat": false,
+     "blush": true
+    },
+    {
+     "key": "驚訝流汗",
+     "face": "驚訝",
+     "sweat": true,
+     "blush": false
+    },
+    {
+     "key": "驚訝臉紅",
+     "face": "驚訝",
+     "sweat": false,
+     "blush": true
+    },
+    {
+     "key": "生氣流汗",
+     "face": "生氣",
+     "sweat": true,
+     "blush": false
+    },
+    {
+     "key": "生氣臉紅",
+     "face": "生氣",
+     "sweat": false,
+     "blush": true
+    },
+    {
+     "key": "睡著流汗",
+     "face": "睡著",
+     "sweat": true,
+     "blush": false
+    },
+    {
+     "key": "睡著臉紅",
+     "face": "睡著",
+     "sweat": false,
+     "blush": true
+    },
+    {
+     "key": "害羞流汗",
+     "face": "害羞",
+     "sweat": true,
+     "blush": false
+    },
+    {
+     "key": "害羞臉紅",
+     "face": "害羞",
+     "sweat": false,
+     "blush": true
     }
    ]
   },

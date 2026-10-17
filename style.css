@@ -35,3 +35,8 @@ footer button{min-height:56px}
 li.line.act{background:#2f3a2c;border-left-color:#e0b347}
 li.line.act .num{color:#e0b347;font-weight:700}
 .actbtn{background:#4a4226}
+.fx{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.fx button.fxb{min-height:48px;padding:0 6px;font-size:15px;background:#2b2533;border:1px solid #514862}
+.fx button.fxb.on{background:#7a5bd1;border-color:#a58bf0;font-weight:700}
+.fx button.fxb:disabled{opacity:.35;text-decoration:line-through}
+.fx.none button.fxb{opacity:.25}
