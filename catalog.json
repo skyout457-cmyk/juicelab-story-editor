@@ -20,6 +20,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -114,6 +115,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -241,6 +243,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -335,6 +338,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -429,6 +433,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -523,6 +528,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -617,6 +623,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -711,6 +718,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -805,6 +813,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -899,6 +908,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -993,6 +1003,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -1078,6 +1089,7 @@
      "set": "normal",
      "face": "injured",
      "layers": [],
+     "snap": false,
      "by_design": true,
      "ok": [
       0
@@ -1109,6 +1121,7 @@
      "set": "normal",
      "face": "injured_calm",
      "layers": [],
+     "snap": false,
      "by_design": true,
      "ok": [
       0
@@ -1140,6 +1153,7 @@
      "set": "normal",
      "face": "injured_pain",
      "layers": [],
+     "snap": false,
      "by_design": true,
      "ok": [
       0
@@ -1171,6 +1185,7 @@
      "set": "normal",
      "face": "injured_smile",
      "layers": [],
+     "snap": false,
      "by_design": true,
      "ok": [
       0
@@ -1202,6 +1217,7 @@
      "set": "normal",
      "face": "injured_closed",
      "layers": [],
+     "snap": false,
      "by_design": true,
      "ok": [
       0
@@ -1246,6 +1262,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -1326,6 +1343,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -1406,6 +1424,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -1486,6 +1505,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -1566,6 +1586,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -1646,6 +1667,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -1726,6 +1748,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -1806,6 +1829,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -1886,6 +1910,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -2079,6 +2104,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -2173,6 +2199,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -2267,6 +2294,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -2361,6 +2389,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -2455,6 +2484,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -2549,6 +2579,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -2643,6 +2674,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -2737,6 +2769,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -2831,6 +2864,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -2929,6 +2963,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -3009,6 +3044,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -3089,6 +3125,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -3169,6 +3206,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -3249,6 +3287,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -3329,6 +3368,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -3409,6 +3449,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -3489,6 +3530,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -3569,6 +3611,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -3782,6 +3825,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -3876,6 +3920,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -3970,6 +4015,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -4064,6 +4110,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -4158,6 +4205,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -4252,6 +4300,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -4346,6 +4395,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -4440,6 +4490,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -4534,6 +4585,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -4632,6 +4684,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -4712,6 +4765,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -4792,6 +4846,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -4872,6 +4927,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -4952,6 +5008,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -5032,6 +5089,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -5112,6 +5170,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -5192,6 +5251,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -5272,6 +5332,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": true,
      "by_design": false,
      "ok": [
       0,
@@ -5469,6 +5530,7 @@
        "label": "眼淚"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -5567,6 +5629,7 @@
        "label": "眼淚"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -5665,6 +5728,7 @@
        "label": "眼淚"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -5763,6 +5827,7 @@
        "label": "眼淚"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -5861,6 +5926,7 @@
        "label": "眼淚"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -6031,6 +6097,7 @@
        "label": "眼淚"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -6129,6 +6196,7 @@
        "label": "眼淚"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -6227,6 +6295,7 @@
        "label": "眼淚"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -6325,6 +6394,7 @@
        "label": "眼淚"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -6427,12 +6497,16 @@
        "label": "眼淚"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
       1,
       2,
       3,
+      4,
+      5,
+      6,
       7
      ],
      "combos": [
@@ -6505,6 +6579,57 @@
        }
       },
       {
+       "m": 4,
+       "cell": "克蕾斯蒂亞，秘湯＋平常＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "neutral",
+         "fx": 4
+        }
+       }
+      },
+      {
+       "m": 5,
+       "cell": "克蕾斯蒂亞，秘湯＋平常＋臉紅＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "neutral",
+         "fx": 5
+        }
+       }
+      },
+      {
+       "m": 6,
+       "cell": "克蕾斯蒂亞，秘湯＋平常＋秘湯汗＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "neutral",
+         "fx": 6
+        }
+       }
+      },
+      {
        "m": 7,
        "cell": "克蕾斯蒂亞，秘湯＋平常＋臉紅＋秘湯汗＋泡後身體",
        "portrait": {
@@ -6547,12 +6672,16 @@
        "label": "眼淚"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
       1,
       2,
       3,
+      4,
+      5,
+      6,
       7
      ],
      "combos": [
@@ -6625,6 +6754,57 @@
        }
       },
       {
+       "m": 4,
+       "cell": "克蕾斯蒂亞，秘湯＋微笑＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "smile",
+         "fx": 4
+        }
+       }
+      },
+      {
+       "m": 5,
+       "cell": "克蕾斯蒂亞，秘湯＋微笑＋臉紅＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "smile",
+         "fx": 5
+        }
+       }
+      },
+      {
+       "m": 6,
+       "cell": "克蕾斯蒂亞，秘湯＋微笑＋秘湯汗＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "smile",
+         "fx": 6
+        }
+       }
+      },
+      {
        "m": 7,
        "cell": "克蕾斯蒂亞，秘湯＋微笑＋臉紅＋秘湯汗＋泡後身體",
        "portrait": {
@@ -6667,12 +6847,16 @@
        "label": "眼淚"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
       1,
       2,
       3,
+      4,
+      5,
+      6,
       7
      ],
      "combos": [
@@ -6745,6 +6929,57 @@
        }
       },
       {
+       "m": 4,
+       "cell": "克蕾斯蒂亞，秘湯＋溫柔＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "gentle",
+         "fx": 4
+        }
+       }
+      },
+      {
+       "m": 5,
+       "cell": "克蕾斯蒂亞，秘湯＋溫柔＋臉紅＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "gentle",
+         "fx": 5
+        }
+       }
+      },
+      {
+       "m": 6,
+       "cell": "克蕾斯蒂亞，秘湯＋溫柔＋秘湯汗＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "gentle",
+         "fx": 6
+        }
+       }
+      },
+      {
        "m": 7,
        "cell": "克蕾斯蒂亞，秘湯＋溫柔＋臉紅＋秘湯汗＋泡後身體",
        "portrait": {
@@ -6787,12 +7022,16 @@
        "label": "眼淚"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
       1,
       2,
       3,
+      4,
+      5,
+      6,
       7
      ],
      "combos": [
@@ -6865,6 +7104,57 @@
        }
       },
       {
+       "m": 4,
+       "cell": "克蕾斯蒂亞，秘湯＋擔心＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "worried",
+         "fx": 4
+        }
+       }
+      },
+      {
+       "m": 5,
+       "cell": "克蕾斯蒂亞，秘湯＋擔心＋臉紅＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "worried",
+         "fx": 5
+        }
+       }
+      },
+      {
+       "m": 6,
+       "cell": "克蕾斯蒂亞，秘湯＋擔心＋秘湯汗＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "worried",
+         "fx": 6
+        }
+       }
+      },
+      {
        "m": 7,
        "cell": "克蕾斯蒂亞，秘湯＋擔心＋臉紅＋秘湯汗＋泡後身體",
        "portrait": {
@@ -6907,17 +7197,24 @@
        "label": "眼淚"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
       1,
       2,
       3,
+      4,
+      5,
+      6,
       7,
       8,
       9,
       10,
       11,
+      12,
+      13,
+      14,
       15
      ],
      "combos": [
@@ -6986,6 +7283,57 @@
          "set": "onsen",
          "face": "sad",
          "fx": 3
+        }
+       }
+      },
+      {
+       "m": 4,
+       "cell": "克蕾斯蒂亞，秘湯＋難過＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "sad",
+         "fx": 4
+        }
+       }
+      },
+      {
+       "m": 5,
+       "cell": "克蕾斯蒂亞，秘湯＋難過＋臉紅＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "sad",
+         "fx": 5
+        }
+       }
+      },
+      {
+       "m": 6,
+       "cell": "克蕾斯蒂亞，秘湯＋難過＋秘湯汗＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "sad",
+         "fx": 6
         }
        }
       },
@@ -7075,6 +7423,57 @@
        }
       },
       {
+       "m": 12,
+       "cell": "克蕾斯蒂亞，秘湯＋難過＋泡後身體＋眼淚",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "sad",
+         "fx": 12
+        }
+       }
+      },
+      {
+       "m": 13,
+       "cell": "克蕾斯蒂亞，秘湯＋難過＋臉紅＋泡後身體＋眼淚",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "sad",
+         "fx": 13
+        }
+       }
+      },
+      {
+       "m": 14,
+       "cell": "克蕾斯蒂亞，秘湯＋難過＋秘湯汗＋泡後身體＋眼淚",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "sad",
+         "fx": 14
+        }
+       }
+      },
+      {
        "m": 15,
        "cell": "克蕾斯蒂亞，秘湯＋難過＋臉紅＋秘湯汗＋泡後身體＋眼淚",
        "portrait": {
@@ -7117,12 +7516,16 @@
        "label": "眼淚"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
       1,
       2,
       3,
+      4,
+      5,
+      6,
       7
      ],
      "combos": [
@@ -7195,6 +7598,57 @@
        }
       },
       {
+       "m": 4,
+       "cell": "克蕾斯蒂亞，秘湯＋驚訝＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "surprised",
+         "fx": 4
+        }
+       }
+      },
+      {
+       "m": 5,
+       "cell": "克蕾斯蒂亞，秘湯＋驚訝＋臉紅＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "surprised",
+         "fx": 5
+        }
+       }
+      },
+      {
+       "m": 6,
+       "cell": "克蕾斯蒂亞，秘湯＋驚訝＋秘湯汗＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "surprised",
+         "fx": 6
+        }
+       }
+      },
+      {
        "m": 7,
        "cell": "克蕾斯蒂亞，秘湯＋驚訝＋臉紅＋秘湯汗＋泡後身體",
        "portrait": {
@@ -7237,12 +7691,16 @@
        "label": "眼淚"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
       1,
       2,
       3,
+      4,
+      5,
+      6,
       7
      ],
      "combos": [
@@ -7315,6 +7773,57 @@
        }
       },
       {
+       "m": 4,
+       "cell": "克蕾斯蒂亞，秘湯＋生氣＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "angry",
+         "fx": 4
+        }
+       }
+      },
+      {
+       "m": 5,
+       "cell": "克蕾斯蒂亞，秘湯＋生氣＋臉紅＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "angry",
+         "fx": 5
+        }
+       }
+      },
+      {
+       "m": 6,
+       "cell": "克蕾斯蒂亞，秘湯＋生氣＋秘湯汗＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "angry",
+         "fx": 6
+        }
+       }
+      },
+      {
        "m": 7,
        "cell": "克蕾斯蒂亞，秘湯＋生氣＋臉紅＋秘湯汗＋泡後身體",
        "portrait": {
@@ -7357,12 +7866,16 @@
        "label": "眼淚"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
       1,
       2,
       3,
+      4,
+      5,
+      6,
       7
      ],
      "combos": [
@@ -7435,6 +7948,57 @@
        }
       },
       {
+       "m": 4,
+       "cell": "克蕾斯蒂亞，秘湯＋睡著＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "sleep",
+         "fx": 4
+        }
+       }
+      },
+      {
+       "m": 5,
+       "cell": "克蕾斯蒂亞，秘湯＋睡著＋臉紅＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "sleep",
+         "fx": 5
+        }
+       }
+      },
+      {
+       "m": 6,
+       "cell": "克蕾斯蒂亞，秘湯＋睡著＋秘湯汗＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "sleep",
+         "fx": 6
+        }
+       }
+      },
+      {
        "m": 7,
        "cell": "克蕾斯蒂亞，秘湯＋睡著＋臉紅＋秘湯汗＋泡後身體",
        "portrait": {
@@ -7477,12 +8041,16 @@
        "label": "眼淚"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
       1,
       2,
       3,
+      4,
+      5,
+      6,
       7
      ],
      "combos": [
@@ -7551,6 +8119,57 @@
          "set": "onsen",
          "face": "shy",
          "fx": 3
+        }
+       }
+      },
+      {
+       "m": 4,
+       "cell": "克蕾斯蒂亞，秘湯＋害羞＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "shy",
+         "fx": 4
+        }
+       }
+      },
+      {
+       "m": 5,
+       "cell": "克蕾斯蒂亞，秘湯＋害羞＋臉紅＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "shy",
+         "fx": 5
+        }
+       }
+      },
+      {
+       "m": 6,
+       "cell": "克蕾斯蒂亞，秘湯＋害羞＋秘湯汗＋泡後身體",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "crestia",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "crestia",
+         "set": "onsen",
+         "face": "shy",
+         "fx": 6
         }
        }
       },
@@ -7706,6 +8325,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -7800,6 +8420,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -7894,6 +8515,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -7988,6 +8610,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -8082,6 +8705,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -8176,6 +8800,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -8270,6 +8895,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -8364,6 +8990,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -8458,6 +9085,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -8556,6 +9184,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -8726,6 +9355,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -8896,6 +9526,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -9066,6 +9697,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -9236,6 +9868,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -9406,6 +10039,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -9576,6 +10210,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -9746,6 +10381,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -9916,6 +10552,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -10199,6 +10836,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -10293,6 +10931,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -10387,6 +11026,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -10481,6 +11121,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -10575,6 +11216,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -10669,6 +11311,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -10763,6 +11406,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -10857,6 +11501,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -10951,6 +11596,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -11049,6 +11695,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -11219,6 +11866,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -11389,6 +12037,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -11559,6 +12208,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -11729,6 +12379,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -11899,6 +12550,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -12069,6 +12721,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -12239,6 +12892,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -12409,6 +13063,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -12692,6 +13347,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -12786,6 +13442,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -12880,6 +13537,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -12974,6 +13632,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -13068,6 +13727,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -13162,6 +13822,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -13256,6 +13917,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -13350,6 +14012,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -13444,6 +14107,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -13542,6 +14206,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -13712,6 +14377,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -13882,6 +14548,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -14052,6 +14719,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -14222,6 +14890,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -14392,6 +15061,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -14562,6 +15232,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -14732,6 +15403,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -14902,6 +15574,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -15185,6 +15858,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -15279,6 +15953,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -15373,6 +16048,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -15467,6 +16143,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -15561,6 +16238,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -15655,6 +16333,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -15749,6 +16428,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -15843,6 +16523,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -15937,6 +16618,7 @@
        "label": "流汗"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -16035,6 +16717,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -16205,6 +16888,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -16375,6 +17059,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -16545,6 +17230,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -16715,6 +17401,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -16885,6 +17572,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -17055,6 +17743,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -17225,6 +17914,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
@@ -17395,6 +18085,7 @@
        "label": "泡後身體"
       }
      ],
+     "snap": false,
      "by_design": false,
      "ok": [
       0,
