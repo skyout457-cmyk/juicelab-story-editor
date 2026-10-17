@@ -193,26 +193,6 @@
      ],
      "sprite": "spr_orc_portrait_triangle",
      "frame": 0
-    },
-    {
-     "key": "得意",
-     "set": "normal",
-     "face": "",
-     "layers": [],
-     "ok": [
-      0
-     ],
-     "missing": true,
-     "combos": [
-      {
-       "m": 0,
-       "cell": "歐克，得意",
-       "portrait": null
-      }
-     ],
-     "sprite": "spr_orc_portrait_smug",
-     "frame": 0,
-     "note": "還沒有圖（缺圖卡）"
     }
    ],
    "legacy_faces": [
