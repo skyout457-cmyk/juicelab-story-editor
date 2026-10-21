@@ -28,7 +28,8 @@ const FX_BIT = Object.fromEntries(FX);
 const faceOf = (sp, key) => sp ? sp.faces.find(f => f.key === key) : null;
 const maskOf = l => FX.reduce((m, [k, b]) => m | (l[k] ? b : 0), 0);
 const maskOk = (f, m) => !!f && (f.ok || [0]).includes(m);
-const fxOk = (sp, l) => sp && sp.kind === 'narration' ? maskOf(l) === 0 : maskOk(faceOf(sp, l.face), maskOf(l));
+// 2026-10-22 (no_portrait)：旁白、以及沒有立繪的說話者（faces 空：骸骨軍需官立繪未到、勇者類一律沒有）都沒有效果可開，不標紅。
+const fxOk = (sp, l) => sp && (sp.kind === 'narration' || !sp.faces.length) ? maskOf(l) === 0 : maskOk(faceOf(sp, l.face), maskOf(l));
 const fxName = (f, m) => (f && f.layers ? f.layers : []).filter(x => m & FX_BIT[x.k]).map(x => x.label).join('＋') || '無效果';
 // 舊檔一個表情一個鍵（「平常流汗」）：讀進來拆成表情＋開關。
 function normLine(l) {
@@ -70,7 +71,7 @@ function lineCard(l, i) {
   const who = document.createElement('select'); who.append(opt('', '誰？（必選）', l.who));
   CAT.speakers.forEach(s => who.append(opt(s.label, s.label, l.who)));
   const face = document.createElement('select');
-  if (sp && !sp.faces.length) { face.append(opt('', '（旁白沒有表情）', '')); face.disabled = true; }
+  if (sp && !sp.faces.length) { face.append(opt('', sp.kind === 'narration' ? '（旁白沒有表情）' : '（沒有立繪）', '')); face.disabled = true; }
   else { face.append(opt('', sp ? '表情（必選）' : '先選誰', l.face)); (sp ? sp.faces : []).forEach(f => face.append(opt(f.key, f.key + (f.note ? '（' + f.note + '）' : ''), l.face))); }
   const emo = document.createElement('select'); emo.append(opt('', '表符（不用）', l.emote));
   CAT.emotes.forEach(e => emo.append(opt(e.label.replace(/ #\d+$/, '').replace(/^#\d+（未命名）$/, '#' + e.n), e.label, l.emote)));

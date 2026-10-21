@@ -25,7 +25,7 @@
 | 欄位 | 內容 |
 |---|---|
 | `type` | `line`＝台詞、`action`＝🎬 動作卡（只有 `text`：鏡頭、走位、人物動作的文字說明）。舊檔沒有 `type` 一律當 `line` |
-| `who` | 必填。`catalog.json` 的 `speakers[].label`（歐克、歐菲、旁白） |
+| `who` | 必填。`catalog.json` 的 `speakers[].label`（歐克、歐菲、旁白）。2026-10-22 起有兩個沒有立繪的說話者：「骸骨軍需官」（立繪製作中）、「勇者 劍士」（勇者類一律只有名牌和台詞）；它們的 `faces` 是空的，表情欄顯示「（沒有立繪）」，效果都不能開，`catalog.json` 的 `hint`／`no_portrait` 來自遊戲的 `portrait_spec.json` |
 | `face` | 必填（旁白為 `""`）。那個角色的 `faces[].key` |
 | `blush` / `sweat` / `body` / `tears` | 選填。效果開關（臉紅／流汗〔秘湯套裝＝秘湯汗〕／泡後身體／眼淚），可以同時開；沒有就是 `false`。只能開美術真的有的組合（`catalog.json` 的 `faces[].ok`／`combos`，由遊戲的 `datafiles/portraits/portrait_spec.json` 產生）。舊檔的「平常流汗」鍵照樣讀（`legacy_faces`），舊檔沒有 `body`／`tears` 也照讀 |
 | `emote` | 選填。表符名稱（`emotes[].label` 去掉 ` #N`，例 `驚訝`）；`""`＝沒有 |

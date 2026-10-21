@@ -18242,6 +18242,23 @@
    ]
   },
   {
+   "id": "quartermaster",
+   "label": "骸骨軍需官",
+   "kind": "speech",
+   "faces": [],
+   "legacy_faces": [],
+   "hint": "古戰場的骸骨軍需官（給血瓶的 NPC）。立繪使用者製作中，到貨前這個角色只有名牌和台詞"
+  },
+  {
+   "id": "hero_swordsman",
+   "label": "勇者 劍士",
+   "kind": "speech",
+   "faces": [],
+   "legacy_faces": [],
+   "hint": "勇者類（勇者 XX）一律沒有立繪：只有名牌和台詞",
+   "no_portrait": true
+  },
+  {
    "id": "narrator",
    "label": "旁白",
    "kind": "narration",
