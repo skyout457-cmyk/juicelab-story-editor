@@ -18245,9 +18245,41 @@
    "id": "quartermaster",
    "label": "骸骨軍需官",
    "kind": "speech",
-   "faces": [],
+   "faces": [
+    {
+     "key": "平常",
+     "set": "normal",
+     "face": "neutral",
+     "layers": [],
+     "by_design": false,
+     "ok": [
+      0
+     ],
+     "combos": [
+      {
+       "m": 0,
+       "cell": "骸骨軍需官，平常",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "quartermaster",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "quartermaster",
+         "set": "normal",
+         "face": "neutral",
+         "fx": 0
+        }
+       }
+      }
+     ],
+     "sprite": "",
+     "frame": 0
+    }
+   ],
    "legacy_faces": [],
-   "hint": "古戰場的骸骨軍需官（給血瓶的 NPC）。立繪使用者製作中，到貨前這個角色只有名牌和台詞"
+   "hint": "古戰場的骸骨軍需官（給血瓶的 NPC）。立繪只有一張（笑），沒有效果層；情緒靠表符"
   },
   {
    "id": "hero_swordsman",

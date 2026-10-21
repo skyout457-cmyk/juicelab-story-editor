@@ -37,6 +37,8 @@ function normLine(l) {
   FX.forEach(([k]) => { l[k] = !!l[k]; });
   const sp = speaker(l.who), old = sp && sp.legacy_faces ? sp.legacy_faces.find(x => x.key === l.face) : null;
   if (old && !faceOf(sp, l.face)) { l.face = old.face; l.sweat = l.sweat || old.sweat === true; l.blush = l.blush || old.blush === true; }
+  // 2026-10-22 (single_face)：只有一張表情的說話者（骸骨軍需官）自動帶入，不用每行選
+  if (sp && sp.faces.length === 1 && !faceOf(sp, l.face)) l.face = sp.faces[0].key;
   return l;
 }
 function toast(m) { const t = $('#toast'); t.textContent = m; t.hidden = false; clearTimeout(t._t); t._t = setTimeout(() => t.hidden = true, 2600); }
@@ -95,7 +97,7 @@ function lineCard(l, i) {
   };
   if (sp && sp.kind === 'narration') { FX.forEach(([k]) => { l[k] = false; }); fxBox.hidden = true; }
   const check = () => { const p = lineProblems(l); warn.textContent = p.join('、'); li.classList.toggle('bad', p.length > 0 && !!(l.who || l.text)); };
-  who.onchange = () => { l.who = who.value; const s = speaker(l.who); if (!s || !s.faces.some(f => f.key === l.face)) l.face = ''; if (s && s.kind === 'narration') { l.emote = ''; if (!l.text) l.text = '（）'; } save(); renderLines(); };
+  who.onchange = () => { l.who = who.value; const s = speaker(l.who); if (!s || !s.faces.some(f => f.key === l.face)) l.face = ''; if (s && s.faces.length === 1) l.face = s.faces[0].key; if (s && s.kind === 'narration') { l.emote = ''; if (!l.text) l.text = '（）'; } save(); renderLines(); };
   face.onchange = () => { l.face = face.value;
     // 新表情沒有目前的組合：不自動換成別的（no_snap），這一行標紅，請用按鈕關掉多的效果。
     const f = faceOf(sp, l.face), m = maskOf(l);
