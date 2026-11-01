@@ -18283,11 +18283,11 @@
   },
   {
    "id": "hero_swordsman",
-   "label": "勇者 劍士",
+   "label": "勇者・劍士",
    "kind": "speech",
    "faces": [],
    "legacy_faces": [],
-   "hint": "勇者類（勇者 XX）一律沒有立繪：只有名牌和台詞",
+   "hint": "勇者類（勇者・XX）一律沒有立繪：只有名牌和台詞",
    "no_portrait": true
   },
   {
