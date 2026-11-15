@@ -18282,6 +18282,46 @@
    "hint": "古戰場的骸骨軍需官（給血瓶的 NPC）。立繪只有一張（笑），沒有效果層；情緒靠表符"
   },
   {
+   "id": "xiaoxian",
+   "label": "小仙雞",
+   "kind": "speech",
+   "faces": [
+    {
+     "key": "平常",
+     "set": "normal",
+     "face": "neutral",
+     "layers": [],
+     "by_design": false,
+     "ok": [
+      0
+     ],
+     "combos": [
+      {
+       "m": 0,
+       "cell": "小仙雞，平常",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "xiaoxian",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "xiaoxian",
+         "set": "normal",
+         "face": "neutral",
+         "fx": 0
+        }
+       }
+      }
+     ],
+     "sprite": "",
+     "frame": 0
+    }
+   ],
+   "legacy_faces": [],
+   "hint": "淚橋的小仙雞（塔羅牌雞，抽卡 NPC；世界開放後住在淚橋）。立繪只有一張（平常），沒有效果層；情緒靠表符"
+  },
+  {
    "id": "hero_swordsman",
    "label": "勇者・劍士",
    "kind": "speech",
