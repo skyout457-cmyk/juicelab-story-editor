@@ -18322,6 +18322,46 @@
    "hint": "淚橋的小仙雞（塔羅牌雞，抽卡 NPC；世界開放後住在淚橋）。立繪只有一張（平常），沒有效果層；情緒靠表符"
   },
   {
+   "id": "greenear",
+   "label": "綠耳",
+   "kind": "speech",
+   "faces": [
+    {
+     "key": "平常",
+     "set": "normal",
+     "face": "neutral",
+     "layers": [],
+     "by_design": false,
+     "ok": [
+      0
+     ],
+     "combos": [
+      {
+       "m": 0,
+       "cell": "綠耳，平常",
+       "portrait": {
+        "sprite": "",
+        "frame": 0,
+        "who": "greenear",
+        "label": "",
+        "missing": false,
+        "spec": {
+         "who": "greenear",
+         "set": "normal",
+         "face": "neutral",
+         "fx": 0
+        }
+       }
+      }
+     ],
+     "sprite": "",
+     "frame": 0
+    }
+   ],
+   "legacy_faces": [],
+   "hint": "奧蘭城郊的哥布林商人綠耳（賣食材，用魂塊交易）。立繪只有一張（平常），沒有效果層；情緒靠表符"
+  },
+  {
    "id": "hero_swordsman",
    "label": "勇者・劍士",
    "kind": "speech",
