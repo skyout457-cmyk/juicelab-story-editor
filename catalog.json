@@ -18371,6 +18371,15 @@
    "no_portrait": true
   },
   {
+   "id": "hero_shaman",
+   "label": "勇者・薩滿",
+   "kind": "speech",
+   "faces": [],
+   "legacy_faces": [],
+   "hint": "奧蘭城郊三勇者之一：城郊戰開場由他代表三人跟歐克對話。勇者類（勇者・XX）一律沒有立繪：只有名牌和台詞",
+   "no_portrait": true
+  },
+  {
    "id": "luqi",
    "label": "呂奇央冋",
    "kind": "speech",
