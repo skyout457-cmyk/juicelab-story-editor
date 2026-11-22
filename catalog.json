@@ -18429,6 +18429,96 @@
    "no_portrait": true
   },
   {
+   "id": "hero_warrior",
+   "label": "勇者・女戰士",
+   "kind": "speech",
+   "faces": [],
+   "legacy_faces": [],
+   "no_portrait": true,
+   "meet_event": "colosseum_meet_warrior"
+  },
+  {
+   "id": "hero_hunter",
+   "label": "勇者・女獵人",
+   "kind": "speech",
+   "faces": [],
+   "legacy_faces": [],
+   "no_portrait": true,
+   "meet_event": "colosseum_meet_hunter"
+  },
+  {
+   "id": "hero_priestess",
+   "label": "勇者・女祭司",
+   "kind": "speech",
+   "faces": [],
+   "legacy_faces": [],
+   "no_portrait": true,
+   "meet_event": "colosseum_meet_priestess"
+  },
+  {
+   "id": "hero_sorceress",
+   "label": "勇者・魔女",
+   "kind": "speech",
+   "faces": [],
+   "legacy_faces": [],
+   "no_portrait": true,
+   "meet_event": "colosseum_meet_sorceress"
+  },
+  {
+   "id": "hero_assassin",
+   "label": "勇者・刺客",
+   "kind": "speech",
+   "faces": [],
+   "legacy_faces": [],
+   "no_portrait": true,
+   "meet_event": "colosseum_meet_assassin"
+  },
+  {
+   "id": "hero_yojimbo",
+   "label": "勇者・用心棒",
+   "kind": "speech",
+   "faces": [],
+   "legacy_faces": [],
+   "no_portrait": true,
+   "meet_event": "colosseum_meet_yojimbo"
+  },
+  {
+   "id": "hero_boxer",
+   "label": "勇者・中華娘",
+   "kind": "speech",
+   "faces": [],
+   "legacy_faces": [],
+   "no_portrait": true,
+   "meet_event": "colosseum_meet_boxer"
+  },
+  {
+   "id": "hero_greatsword",
+   "label": "勇者・大劍",
+   "kind": "speech",
+   "faces": [],
+   "legacy_faces": [],
+   "no_portrait": true,
+   "meet_event": "colosseum_meet_greatsword"
+  },
+  {
+   "id": "hero_arena_gladiator",
+   "label": "勇者・角鬥士",
+   "kind": "speech",
+   "faces": [],
+   "legacy_faces": [],
+   "no_portrait": true,
+   "meet_event": "colosseum_meet_gladiator"
+  },
+  {
+   "id": "champion_luqi",
+   "label": "冠軍呂奇央冋",
+   "kind": "speech",
+   "faces": [],
+   "legacy_faces": [],
+   "no_portrait": true,
+   "meet_event": "colosseum_meet_champion_luqi"
+  },
+  {
    "id": "narrator",
    "label": "旁白",
    "kind": "narration",

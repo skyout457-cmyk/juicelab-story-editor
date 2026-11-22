@@ -85,7 +85,7 @@ def main():
                               "sprite": spr, "frame": 0, "note": "還沒有圖（缺圖卡）"})
         entry = {"id": c["id"], "label": c["name"], "kind": "speech", "faces": faces, "legacy_faces": legacy}
         # 2026-10-22 (no_portrait)：規格檔的 hint／no_portrait 原樣帶過去（沒有立繪的角色：骸骨軍需官未到貨、勇者類一律沒有）
-        for k in ("hint", "no_portrait"):
+        for k in ("hint", "no_portrait", "meet_event"):
             if c.get(k): entry[k] = c[k]
         speakers.append(entry)
     speakers.append({"id": "narrator", "label": "旁白", "kind": "narration", "faces": [],

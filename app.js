@@ -6,7 +6,8 @@ const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 
 const emptyLine = () => ({type: 'line', who: '', face: '', sweat: false, blush: false, body: false, tears: false, emote: '', text: ''});
 const emptyAction = () => ({type: 'action', text: ''});
 const isAct = l => l.type === 'action';
-const newScene = t => ({id: uid(), title: t || '', lines: [emptyLine()]});
+const newScene = (title, id = uid(), who = '') => ({id, title: title || '', lines: [{...emptyLine(), who}]});
+const introTitle = sp => '鬥技場初見－' + sp.label;
 const FW = {'?': '？', '!': '！', ',': '，', ':': '：', ';': '；', '(': '（', ')': '）'};
 const toFw = s => s.replace(/[?!,:;()]/g, c => FW[c]).replace(/\.\.\.+/g, '……');
 const hasHalf = s => /[?!,:;()]|\.\.\./.test(s);
@@ -39,6 +40,7 @@ function normLine(l) {
   if (old && !faceOf(sp, l.face)) { l.face = old.face; l.sweat = l.sweat || old.sweat === true; l.blush = l.blush || old.blush === true; }
   // 2026-10-22 (single_face)：只有一張表情的說話者（骸骨軍需官）自動帶入，不用每行選
   if (sp && sp.faces.length === 1 && !faceOf(sp, l.face)) l.face = sp.faces[0].key;
+  if (sp && sp.no_portrait) { l.face = ''; FX.forEach(([k]) => { l[k] = false; }); }
   return l;
 }
 function toast(m) { const t = $('#toast'); t.textContent = m; t.hidden = false; clearTimeout(t._t); t._t = setTimeout(() => t.hidden = true, 2600); }
@@ -48,7 +50,21 @@ function el(tag, cls, kids) { const e = document.createElement(tag); if (cls) e.
 
 function renderScenes() {
   const sel = $('#sceneSel'); sel.innerHTML = '';
-  S.scenes.forEach((sc, i) => sel.append(opt(String(i), (sc.title || '（未命名）') + `（${sc.lines.length}行）`, String(S.cur))));
+  const intros = CAT.speakers.filter(sp => sp.meet_event);
+  const drafts = new Map();
+  S.scenes.forEach((sc, i) => {
+    const sp = intros.find(s => s.meet_event === sc.id);
+    const title = sp && sc.title === introTitle(sp) ? sp.label : (sc.title || '（未命名）');
+    const choice = opt(String(i), title + `（${sc.lines.length}行）`, String(S.cur));
+    if (sp) drafts.set(sc.id, choice);
+    else sel.append(choice);
+  });
+  if (intros.length) {
+    const group = document.createElement('optgroup');
+    group.label = '鬥技場初見';
+    for (const sp of intros) group.append(drafts.get(sp.meet_event) || opt(sp.meet_event, sp.label));
+    sel.append(group);
+  }
   $('#sceneTitle').value = scene().title; $('#autoFw').checked = !!S.autoFw;
 }
 function lineProblems(l) {
@@ -97,7 +113,7 @@ function lineCard(l, i) {
   };
   if (sp && sp.kind === 'narration') { FX.forEach(([k]) => { l[k] = false; }); fxBox.hidden = true; }
   const check = () => { const p = lineProblems(l); warn.textContent = p.join('、'); li.classList.toggle('bad', p.length > 0 && !!(l.who || l.text)); };
-  who.onchange = () => { l.who = who.value; const s = speaker(l.who); if (!s || !s.faces.some(f => f.key === l.face)) l.face = ''; if (s && s.faces.length === 1) l.face = s.faces[0].key; if (s && s.kind === 'narration') { l.emote = ''; if (!l.text) l.text = '（）'; } save(); renderLines(); };
+  who.onchange = () => { l.who = who.value; const s = speaker(l.who); if (!s || !s.faces.some(f => f.key === l.face)) l.face = ''; normLine(l); if (s && s.kind === 'narration') { l.emote = ''; if (!l.text) l.text = '（）'; } save(); renderLines(); };
   face.onchange = () => { l.face = face.value;
     // 新表情沒有目前的組合：不自動換成別的（no_snap），這一行標紅，請用按鈕關掉多的效果。
     const f = faceOf(sp, l.face), m = maskOf(l);
@@ -107,7 +123,9 @@ function lineCard(l, i) {
   tx.oninput = () => { if (S.autoFw && hasHalf(tx.value)) { const p = tx.selectionStart; tx.value = toFw(tx.value); tx.setSelectionRange(p, p); } l.text = tx.value; save(); check(); };
   const grp = (t, c) => { const w = el('div', 'grp', [t]); w.append(c); return w; };
   const lab = (t, c) => { const w = el('label', '', [t]); w.append(c); return w; };
-  li.append(el('div', 'row', [lab('誰', who), lab('表情', face)]), el('div', 'row', [lab('表符', emo), grp('效果（可同時：臉紅／流汗／泡後身體／眼淚）', fxBox)]), tx, warn);
+  const fxField = grp('效果（可同時：臉紅／流汗／泡後身體／眼淚）', fxBox);
+  fxField.hidden = !!sp && !sp.faces.length;
+  li.append(el('div', 'row', [lab('誰', who), lab('表情', face)]), el('div', 'row', [lab('表符', emo), fxField]), tx, warn);
   cardTools(l, i, li);
   paintFx(); check(); return li;
 }
@@ -178,7 +196,18 @@ function doImport(f) {
 }
 
 function bind() {
-  $('#sceneSel').onchange = e => { S.cur = +e.target.value; save(); renderLines(); };
+  $('#sceneSel').onchange = e => {
+    const value = e.target.value;
+    const sp = CAT.speakers.find(s => s.meet_event === value);
+    if (sp) {
+      S.scenes.push(newScene(introTitle(sp), sp.meet_event, sp.label));
+      S.cur = S.scenes.length - 1;
+    } else {
+      S.cur = Number(value);
+    }
+    save();
+    renderLines();
+  };
   $('#sceneTitle').oninput = e => { scene().title = e.target.value; save(); renderScenes(); };
   $('#newScene').onclick = () => { S.scenes.push(newScene('新場景 ' + (S.scenes.length + 1))); S.cur = S.scenes.length - 1; save(); renderLines(); $('#sceneTitle').focus(); };
   $('#menuBtn').onclick = () => $('#menu').hidden = !$('#menu').hidden;
